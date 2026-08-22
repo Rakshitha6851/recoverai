@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/RecoverAI-Failed%20Payment%20Recovery-8A2BE2?style=for-the-badge" alt="RecoverAI" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Python-ML%20%2B%20Rules-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+</p>
+
+<hr />
+
 **NOTE:** The dashboard runs locally after starting the FastAPI server; 127.0.0.1 refers to the machine running the application.
 
 # RecoverAI
@@ -62,6 +70,8 @@ Execute a bounded recovery workflow using:
 - recovery decisions
 - stopping rules
 - audit records
+
+---
 
 ## Architecture
 
@@ -220,6 +230,8 @@ ESCALATION_REQUIRED
 
 No additional automatic retry is performed.
 
+---
+
 Technology
 Python
 FastAPI
@@ -231,15 +243,15 @@ JavaScript
 Uvicorn
 Running the Project
 
-Activate the virtual environment:
+**Activate the virtual environment:**
 
 .venv\Scripts\activate
 
-Install dependencies:
+**Install dependencies:**
 
 pip install -r requirements.txt
 
-Start the FastAPI backend:
+**Start the FastAPI backend:**
 
 uvicorn backend.main:app --reload
 
@@ -291,6 +303,8 @@ recoverai/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+---
+
 Buildathon Focus
 
 RecoverAI focuses on intelligent failed-payment recovery through:
