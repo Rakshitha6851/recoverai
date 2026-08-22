@@ -1,8 +1,12 @@
+**NOTE:** The dashboard runs locally after starting the FastAPI server; 127.0.0.1 refers to the machine running the application.
+
 # RecoverAI
 
 ## AI Failed Payment Recovery Agent
 
 RecoverAI is an AI-assisted failed-payment recovery system designed to identify failed payments, diagnose failure reasons, choose a safe recovery intervention, execute bounded recovery, and record an auditable outcome.
+
+> **Note:** The dashboard runs locally after starting the FastAPI server. `127.0.0.1` refers to the machine running the application.
 
 ## Problem
 
@@ -231,9 +235,15 @@ Activate the virtual environment:
 
 .venv\Scripts\activate
 
+Install dependencies:
+
+pip install -r requirements.txt
+
 Start the FastAPI backend:
 
 uvicorn backend.main:app --reload
+
+The dashboard runs locally after the backend starts.
 
 Open the dashboard:
 
@@ -253,6 +263,7 @@ Project Structure
 recoverai/
 |
 ├── backend/
+│   ├── _init_.py
 │   └── main.py
 |
 ├── frontend/
