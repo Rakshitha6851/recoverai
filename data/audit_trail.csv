@@ -1,0 +1,1328 @@
+payment_id,amount,failure_reason,attempt_number,recommended_action,decision_reason,expected_recovery_value,audit_status
+pay_00004,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_00005,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_00006,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_00009,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_00011,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_00012,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00013,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_00016,1999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_00017,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_00019,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_00021,2499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_00023,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_00025,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_00026,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_00029,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_00031,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_00035,199,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,119.39999999999999,DECISION_RECORDED
+pay_00036,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_00037,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_00041,499,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,324.35,DECISION_RECORDED
+pay_00049,1499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_00050,2499,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00056,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_00057,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_00058,9999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,5499.450000000001,DECISION_RECORDED
+pay_00061,199,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_00063,9999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,5499.450000000001,DECISION_RECORDED
+pay_00064,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_00069,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_00072,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_00075,1499,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,374.75,DECISION_RECORDED
+pay_00079,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_00094,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_00097,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_00102,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_00108,2499,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,624.75,DECISION_RECORDED
+pay_00110,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_00113,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_00120,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_00123,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_00131,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_00132,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_00139,1499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_00142,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_00149,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_00151,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_00155,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_00156,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00159,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_00168,4999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_00169,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_00170,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00176,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_00179,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_00180,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_00181,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_00182,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_00183,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_00189,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_00190,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_00193,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_00195,4999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_00198,1499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_00205,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_00210,199,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00212,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_00214,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_00220,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_00221,2499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_00229,199,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_00232,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_00242,999,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,249.75,DECISION_RECORDED
+pay_00246,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_00249,1499,insufficient_funds,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,524.65,DECISION_RECORDED
+pay_00251,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_00253,1499,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_00257,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_00262,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_00264,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_00267,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_00273,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_00284,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00286,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_00288,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_00292,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_00294,1499,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,449.7,DECISION_RECORDED
+pay_00295,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_00298,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00299,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_00304,299,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,74.75,DECISION_RECORDED
+pay_00310,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_00311,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_00312,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_00313,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_00317,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_00318,199,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00324,9999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,5499.450000000001,DECISION_RECORDED
+pay_00327,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_00329,999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_00339,4999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_00340,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_00343,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_00345,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_00346,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_00359,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_00361,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00363,499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_00366,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_00368,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_00369,9999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_00370,499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_00371,199,authentication_failed,2,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_00374,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00378,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_00380,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_00384,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_00387,199,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00395,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_00399,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_00401,9999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_00404,2499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_00407,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_00413,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_00417,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_00420,299,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_00421,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_00423,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_00424,1499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_00425,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_00427,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_00434,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_00439,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_00441,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_00442,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_00443,499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_00446,1499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_00447,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00449,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_00450,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_00457,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_00458,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_00460,2499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_00464,4999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_00468,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_00473,199,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_00474,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00476,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_00489,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_00491,499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_00494,1999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_00496,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_00499,999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_00510,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_00512,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_00517,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_00519,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_00521,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_00523,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_00524,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_00525,999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_00527,2499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_00531,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_00535,9999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_00541,1499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_00547,999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_00548,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_00550,1999,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,1299.3500000000001,DECISION_RECORDED
+pay_00553,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_00558,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_00559,199,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,119.39999999999999,DECISION_RECORDED
+pay_00560,1499,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,974.35,DECISION_RECORDED
+pay_00564,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_00568,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_00574,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_00578,299,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_00580,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_00583,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_00584,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_00586,299,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_00588,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_00590,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_00594,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_00599,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_00608,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_00611,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_00613,1499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_00615,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_00619,999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_00622,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_00624,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00630,9999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_00631,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_00632,9999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_00633,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_00634,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_00647,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_00648,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_00649,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_00659,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_00664,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_00668,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_00678,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_00680,2499,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00683,9999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_00685,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_00686,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_00687,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_00694,299,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_00697,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_00706,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00708,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_00709,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_00711,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_00715,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_00717,4999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_00722,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_00723,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_00724,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_00726,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_00732,1999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_00733,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00737,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_00738,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_00741,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_00743,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_00744,499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_00746,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_00755,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_00756,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_00759,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_00769,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_00774,1999,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,599.6999999999999,DECISION_RECORDED
+pay_00775,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_00779,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_00789,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_00794,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_00799,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_00800,2499,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,624.75,DECISION_RECORDED
+pay_00802,199,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_00804,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_00807,1999,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,599.6999999999999,DECISION_RECORDED
+pay_00810,499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_00811,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_00812,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_00815,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_00817,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_00821,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_00826,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_00828,2499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_00829,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_00830,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_00831,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_00835,9999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_00837,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_00838,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_00840,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_00843,1999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_00846,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_00852,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_00854,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00857,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_00862,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_00863,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_00868,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_00870,199,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_00879,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_00880,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_00881,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_00887,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_00895,499,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,299.4,DECISION_RECORDED
+pay_00900,2499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_00903,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_00908,1499,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,449.7,DECISION_RECORDED
+pay_00914,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_00918,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_00923,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_00925,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_00929,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_00930,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_00932,999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_00938,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_00940,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_00954,1499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_00956,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_00959,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_00962,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_00965,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_00970,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_00971,4999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,2749.4500000000003,DECISION_RECORDED
+pay_00972,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_00973,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_00984,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_00987,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_00996,499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_00997,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_01007,4999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_01010,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_01023,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_01027,299,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,89.7,DECISION_RECORDED
+pay_01028,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_01031,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_01036,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_01039,9999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_01040,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_01043,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_01045,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_01048,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_01052,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_01056,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_01058,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_01066,299,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_01089,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_01091,999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_01092,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_01099,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_01100,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_01106,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_01109,299,authentication_failed,2,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_01113,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_01116,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_01117,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_01120,999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_01122,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_01128,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_01131,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_01134,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_01135,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_01136,1499,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_01139,1499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_01141,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_01148,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_01151,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_01154,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_01157,299,authentication_failed,2,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_01163,199,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_01168,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_01169,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_01174,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_01176,1999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_01181,4999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_01182,1999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_01184,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_01187,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_01193,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_01194,199,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_01199,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_01205,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_01210,4999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_01221,299,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_01225,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_01233,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_01241,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_01251,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_01254,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_01266,299,authentication_failed,2,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_01271,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_01274,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_01276,1499,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,374.75,DECISION_RECORDED
+pay_01281,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_01283,1499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_01286,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_01289,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_01291,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_01294,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_01299,299,authentication_failed,2,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_01302,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_01304,9999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_01308,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_01309,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_01311,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_01312,199,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_01316,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_01317,2499,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_01336,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_01337,1999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_01342,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_01350,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_01354,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_01360,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_01371,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_01374,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_01379,199,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,119.39999999999999,DECISION_RECORDED
+pay_01388,999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_01389,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_01394,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_01397,499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_01402,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_01408,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_01413,999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_01423,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_01427,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_01430,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_01431,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_01434,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_01437,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_01438,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_01441,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_01445,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_01446,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_01447,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_01448,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_01452,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_01457,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_01460,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_01464,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_01466,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_01467,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_01475,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_01476,4999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_01480,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_01485,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_01497,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_01498,1499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_01506,4999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_01507,499,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_01515,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_01519,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_01520,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_01528,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_01529,499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_01531,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_01535,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_01538,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_01539,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_01541,9999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_01545,1499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_01549,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_01550,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_01552,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_01559,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_01564,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_01565,9999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_01567,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_01569,499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_01572,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_01575,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_01577,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_01579,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_01583,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_01588,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_01591,2499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_01592,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_01595,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_01603,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_01606,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_01613,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_01615,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_01624,9999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_01635,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_01639,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_01643,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_01646,299,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_01650,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_01656,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_01657,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_01660,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_01669,499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_01671,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_01673,9999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_01675,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_01678,2499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_01681,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_01684,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_01694,999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_01695,9999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_01696,299,authentication_failed,2,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_01698,1499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_01702,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_01709,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_01715,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_01723,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_01724,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_01727,299,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_01734,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_01746,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_01748,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_01750,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_01752,299,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_01758,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_01763,199,insufficient_funds,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,69.64999999999999,DECISION_RECORDED
+pay_01766,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_01782,299,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,179.4,DECISION_RECORDED
+pay_01783,1499,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_01788,999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_01792,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_01797,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_01798,999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,549.45,DECISION_RECORDED
+pay_01804,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_01810,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_01823,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_01825,2499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_01826,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_01828,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_01837,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_01840,999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_01848,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_01854,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_01858,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_01862,199,authentication_failed,2,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_01867,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_01885,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_01886,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_01893,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_01898,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_01905,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_01907,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_01908,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_01915,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_01923,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_01927,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_01931,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_01933,999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_01934,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_01940,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_01941,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_01943,1999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,1099.45,DECISION_RECORDED
+pay_01946,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_01956,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_01957,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_01958,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_01962,199,insufficient_funds,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,69.64999999999999,DECISION_RECORDED
+pay_01964,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_01967,1499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_01986,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_01988,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_01990,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_01993,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_01994,299,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_01996,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_01999,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_02003,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_02006,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_02010,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_02011,9999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_02016,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_02018,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_02019,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_02020,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_02024,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_02030,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_02034,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_02037,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_02043,299,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_02048,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_02049,1499,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_02052,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_02054,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_02055,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_02058,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_02075,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_02082,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_02084,199,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_02095,999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_02097,2499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_02101,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_02102,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_02106,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_02107,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_02113,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_02114,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_02116,199,authentication_failed,2,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_02117,499,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,299.4,DECISION_RECORDED
+pay_02128,2499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_02134,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_02136,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_02138,9999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_02142,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_02143,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_02144,1499,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_02145,1499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_02149,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_02151,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_02152,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_02154,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_02160,9999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,5499.450000000001,DECISION_RECORDED
+pay_02166,2499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_02168,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_02176,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_02177,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_02179,4999,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,3249.35,DECISION_RECORDED
+pay_02181,199,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_02183,9999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_02184,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_02188,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_02201,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_02207,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_02209,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_02232,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_02237,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_02240,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_02247,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_02249,9999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_02250,1499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_02256,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_02258,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_02266,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_02267,9999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,5499.450000000001,DECISION_RECORDED
+pay_02270,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_02276,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_02279,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_02283,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_02284,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_02286,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_02289,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_02302,9999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_02303,1499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_02305,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_02311,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_02313,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_02314,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_02324,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_02336,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_02340,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_02344,199,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_02346,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_02347,2499,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_02355,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_02361,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_02363,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_02372,1999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_02382,299,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_02391,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_02392,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_02394,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_02397,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_02407,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_02411,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_02414,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_02415,199,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,59.699999999999996,DECISION_RECORDED
+pay_02419,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_02420,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_02426,499,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,149.7,DECISION_RECORDED
+pay_02431,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_02442,499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_02446,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_02450,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_02451,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_02454,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_02467,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_02468,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_02469,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_02474,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_02481,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_02482,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_02486,4999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_02491,9999,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,2999.7,DECISION_RECORDED
+pay_02493,199,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_02497,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_02504,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_02507,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_02509,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_02510,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_02511,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_02518,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_02522,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_02535,1499,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,824.45,DECISION_RECORDED
+pay_02555,999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_02557,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_02561,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_02566,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_02568,299,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_02573,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_02585,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_02588,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_02591,9999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_02592,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_02597,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_02601,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_02603,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_02606,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_02609,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_02612,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_02616,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_02617,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_02619,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_02624,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_02636,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_02637,1999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_02646,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_02651,2499,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,624.75,DECISION_RECORDED
+pay_02655,1499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_02656,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_02661,499,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,124.75,DECISION_RECORDED
+pay_02662,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_02663,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_02666,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_02668,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_02675,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_02676,4999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_02678,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_02681,1499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_02682,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_02686,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_02687,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_02690,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_02705,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_02710,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_02721,1499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_02722,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_02735,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_02736,999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_02737,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_02738,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_02740,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_02750,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_02752,1999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_02755,1999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_02766,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_02768,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_02769,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_02773,1499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_02776,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_02780,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_02782,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_02783,1499,insufficient_funds,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,524.65,DECISION_RECORDED
+pay_02786,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_02787,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_02792,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_02793,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_02795,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_02796,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_02797,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_02802,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_02803,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_02806,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_02810,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_02811,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_02816,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_02818,2499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_02821,1999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_02824,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_02829,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_02830,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_02833,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_02836,299,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_02837,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_02846,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_02848,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_02851,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_02853,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_02854,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_02862,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_02864,9999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,5499.450000000001,DECISION_RECORDED
+pay_02869,999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_02870,9999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_02871,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_02873,299,authentication_failed,2,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_02874,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_02878,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_02884,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_02885,299,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_02891,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_02894,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_02903,999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_02905,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_02906,1999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_02909,299,authentication_failed,2,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_02912,4999,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,3249.35,DECISION_RECORDED
+pay_02915,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_02917,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_02918,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_02919,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_02923,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_02927,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_02931,1999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_02933,499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_02935,1499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_02939,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_02941,199,authentication_failed,2,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_02943,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_02950,1499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_02953,2499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_02955,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_02956,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_02961,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_02962,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_02969,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_02971,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_02973,2499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_02975,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_02976,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_02977,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_02981,1999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_02982,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_02983,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_02988,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_02991,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_02992,299,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_02993,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_03000,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_03003,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_03004,999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_03006,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_03008,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_03012,9999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_03013,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_03014,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_03016,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03018,1999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_03021,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_03028,299,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_03034,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03041,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_03043,2499,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_03045,2499,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,624.75,DECISION_RECORDED
+pay_03049,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_03050,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_03051,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_03056,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_03057,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_03060,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_03064,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_03068,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_03076,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_03080,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_03088,2499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03090,299,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_03091,4999,insufficient_funds,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,1749.6499999999999,DECISION_RECORDED
+pay_03095,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_03102,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_03107,299,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_03112,199,authentication_failed,2,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03114,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_03118,299,authentication_failed,2,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_03119,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_03124,499,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_03126,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_03129,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_03130,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_03131,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_03132,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_03136,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_03141,4999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_03145,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03149,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03151,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03152,2499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_03156,9999,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,6499.35,DECISION_RECORDED
+pay_03157,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_03160,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_03161,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03162,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_03166,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_03168,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_03172,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03174,299,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_03182,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_03187,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_03188,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_03190,1499,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,449.7,DECISION_RECORDED
+pay_03191,9999,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,5999.4,DECISION_RECORDED
+pay_03192,1499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_03196,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_03200,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_03203,2499,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_03208,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_03210,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_03213,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_03215,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_03216,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_03219,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_03223,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_03224,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_03226,999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_03227,499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_03229,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_03234,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_03235,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_03238,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_03241,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_03242,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_03246,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_03249,199,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_03250,1499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_03251,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_03257,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_03264,4999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_03266,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_03270,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_03271,299,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,194.35,DECISION_RECORDED
+pay_03274,4999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_03279,4999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_03281,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_03284,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_03285,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_03292,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03293,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_03294,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03297,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_03299,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_03300,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_03303,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03305,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_03307,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_03313,2499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_03314,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_03320,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03321,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03325,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_03338,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_03341,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_03343,1999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_03352,2499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03357,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_03359,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_03363,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_03364,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_03365,9999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_03366,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03377,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_03380,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_03385,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_03387,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_03392,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_03393,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_03396,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_03397,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_03399,199,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03403,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_03410,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_03411,499,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,324.35,DECISION_RECORDED
+pay_03418,199,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_03423,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_03427,1999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_03430,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_03434,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_03443,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_03444,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_03447,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_03448,199,authentication_failed,2,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03449,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03452,4999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,2749.4500000000003,DECISION_RECORDED
+pay_03456,4999,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,1499.7,DECISION_RECORDED
+pay_03459,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_03461,999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_03463,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03469,9999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_03474,1499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_03476,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_03482,9999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_03483,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_03488,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03494,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_03496,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_03499,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_03503,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_03505,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_03506,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_03508,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03511,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_03517,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_03523,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_03527,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_03528,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_03529,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_03536,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_03540,999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_03541,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_03560,999,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,299.7,DECISION_RECORDED
+pay_03571,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_03585,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_03586,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_03594,9999,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,6499.35,DECISION_RECORDED
+pay_03599,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_03602,299,authentication_failed,2,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_03604,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_03605,499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_03606,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_03616,199,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03618,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_03623,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_03628,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_03635,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_03637,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_03640,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_03647,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_03648,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_03649,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_03653,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_03654,499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_03656,299,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,164.45000000000002,DECISION_RECORDED
+pay_03666,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_03670,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_03674,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_03675,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_03685,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_03686,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_03688,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_03701,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_03704,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_03706,4999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_03708,4999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_03712,4999,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,2749.4500000000003,DECISION_RECORDED
+pay_03713,4999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_03718,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_03719,2499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03720,4999,insufficient_funds,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,1749.6499999999999,DECISION_RECORDED
+pay_03723,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_03724,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_03727,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_03732,299,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,179.4,DECISION_RECORDED
+pay_03733,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_03737,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_03747,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03749,1999,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,599.6999999999999,DECISION_RECORDED
+pay_03750,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_03754,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03755,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_03756,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_03762,4999,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,3249.35,DECISION_RECORDED
+pay_03763,1999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_03765,299,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,74.75,DECISION_RECORDED
+pay_03766,1499,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_03767,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_03770,199,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,59.699999999999996,DECISION_RECORDED
+pay_03777,499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_03778,1999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_03789,2499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_03790,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03793,499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_03795,199,authentication_failed,1,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_03800,4999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_03803,199,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_03804,2499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_03807,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_03812,1999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_03814,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_03823,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_03828,2499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03830,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_03832,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_03834,1499,timeout,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,974.35,DECISION_RECORDED
+pay_03835,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_03836,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_03837,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_03838,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_03840,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_03853,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_03856,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_03858,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_03859,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_03862,1999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_03868,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_03871,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_03872,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_03878,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_03882,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_03888,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_03892,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_03897,1999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_03909,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_03911,1499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_03915,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_03917,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_03919,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_03928,1999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_03929,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_03932,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_03933,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_03941,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_03950,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_03951,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_03955,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_03959,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_03963,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_03969,1499,insufficient_funds,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,524.65,DECISION_RECORDED
+pay_03970,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_03972,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_03973,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_03975,9999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_03976,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_03982,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_03987,1499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_03994,499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_03999,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_04020,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_04021,1499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_04024,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_04026,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_04027,2499,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,624.75,DECISION_RECORDED
+pay_04028,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_04029,999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_04036,1499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_04038,199,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_04040,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_04044,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04048,4999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_04049,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_04050,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_04051,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_04053,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_04054,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_04055,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_04060,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_04072,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_04073,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_04077,499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_04083,299,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_04087,1499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_04088,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_04091,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_04101,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_04104,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_04105,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_04114,4999,limit_exceeded,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,1499.7,DECISION_RECORDED
+pay_04116,999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_04117,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_04120,1999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_04123,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_04124,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_04125,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04126,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_04127,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_04135,2499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1624.3500000000001,DECISION_RECORDED
+pay_04139,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_04143,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_04158,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_04164,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_04165,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_04166,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_04170,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_04174,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_04175,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_04178,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_04184,2499,authentication_failed,2,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_04185,299,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_04188,299,bank_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,164.45000000000002,DECISION_RECORDED
+pay_04191,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_04192,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_04193,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_04194,9999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_04198,299,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_04200,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_04201,499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,274.45000000000005,DECISION_RECORDED
+pay_04203,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_04204,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_04205,9999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_04211,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_04214,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_04220,1999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_04226,1999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_04228,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_04235,9999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_04236,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_04239,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_04241,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_04243,299,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_04251,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_04252,199,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_04253,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_04258,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04260,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_04266,199,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,109.45,DECISION_RECORDED
+pay_04270,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_04272,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_04276,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_04280,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04284,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_04286,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_04288,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_04289,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_04296,499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_04300,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_04301,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_04302,199,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_04304,199,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,69.64999999999999,DECISION_RECORDED
+pay_04305,2499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,874.65,DECISION_RECORDED
+pay_04307,9999,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_04311,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_04332,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_04333,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_04335,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_04336,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_04337,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_04343,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_04344,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_04346,1499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_04355,4999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_04357,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_04368,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_04370,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_04373,299,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_04376,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_04379,199,network_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_04382,2499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_04385,199,insufficient_funds,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,69.64999999999999,DECISION_RECORDED
+pay_04386,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_04387,499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_04391,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_04392,199,insufficient_funds,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,69.64999999999999,DECISION_RECORDED
+pay_04397,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_04403,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_04405,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_04408,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_04416,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_04422,999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_04424,1499,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_04429,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_04431,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_04433,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_04437,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_04438,999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_04446,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_04449,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_04451,1999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_04456,9999,authentication_failed,2,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_04462,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_04470,999,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,249.75,DECISION_RECORDED
+pay_04476,499,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_04478,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_04479,499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,124.75,DECISION_RECORDED
+pay_04487,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_04492,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_04498,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_04505,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_04509,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_04511,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_04520,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_04521,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_04531,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_04537,499,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,124.75,DECISION_RECORDED
+pay_04539,2499,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,1499.3999999999999,DECISION_RECORDED
+pay_04544,199,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,129.35,DECISION_RECORDED
+pay_04545,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_04556,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_04557,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_04559,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_04563,999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,599.4,DECISION_RECORDED
+pay_04564,2499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,624.75,DECISION_RECORDED
+pay_04566,299,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,194.35,DECISION_RECORDED
+pay_04576,9999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5499.450000000001,DECISION_RECORDED
+pay_04577,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_04578,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_04580,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_04583,1999,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1299.3500000000001,DECISION_RECORDED
+pay_04585,4999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,3249.35,DECISION_RECORDED
+pay_04592,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_04601,1499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,524.65,DECISION_RECORDED
+pay_04606,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_04613,499,network_error,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,299.4,DECISION_RECORDED
+pay_04615,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_04626,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_04629,199,authentication_failed,2,AUTHENTICATION,Payment authentication is required,49.75,DECISION_RECORDED
+pay_04631,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_04636,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_04637,2499,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1374.45,DECISION_RECORDED
+pay_04638,999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,249.75,DECISION_RECORDED
+pay_04642,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_04650,4999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2999.4,DECISION_RECORDED
+pay_04664,2499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_04677,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_04678,4999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,1249.75,DECISION_RECORDED
+pay_04685,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_04688,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04694,4999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_04723,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_04724,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_04729,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_04737,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_04749,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_04750,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04763,4999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_04766,299,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,74.75,DECISION_RECORDED
+pay_04774,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04782,1499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_04783,199,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_04790,1499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,974.35,DECISION_RECORDED
+pay_04804,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04810,4999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_04817,499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,149.7,DECISION_RECORDED
+pay_04818,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_04819,299,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,89.7,DECISION_RECORDED
+pay_04826,1999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1099.45,DECISION_RECORDED
+pay_04828,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_04829,199,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,119.39999999999999,DECISION_RECORDED
+pay_04830,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_04835,1499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,899.4,DECISION_RECORDED
+pay_04837,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_04838,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_04839,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_04841,9999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,3499.6499999999996,DECISION_RECORDED
+pay_04842,1499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,449.7,DECISION_RECORDED
+pay_04844,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_04846,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_04849,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_04851,299,authentication_failed,1,AUTHENTICATION,Payment authentication is required,74.75,DECISION_RECORDED
+pay_04855,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_04856,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_04861,2499,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,749.6999999999999,DECISION_RECORDED
+pay_04866,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_04867,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_04868,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_04870,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_04873,499,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_04875,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_04881,4999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1749.6499999999999,DECISION_RECORDED
+pay_04885,999,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,549.45,DECISION_RECORDED
+pay_04896,999,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,349.65,DECISION_RECORDED
+pay_04898,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_04900,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04905,999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,649.35,DECISION_RECORDED
+pay_04909,4999,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,2749.4500000000003,DECISION_RECORDED
+pay_04911,1999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,599.6999999999999,DECISION_RECORDED
+pay_04918,1999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,499.75,DECISION_RECORDED
+pay_04928,4999,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,1499.7,DECISION_RECORDED
+pay_04931,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_04940,199,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_04947,1999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1199.3999999999999,DECISION_RECORDED
+pay_04948,1999,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,699.65,DECISION_RECORDED
+pay_04950,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_04952,1499,bank_error,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,824.45,DECISION_RECORDED
+pay_04957,499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,299.4,DECISION_RECORDED
+pay_04961,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED
+pay_04962,499,insufficient_funds,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,174.64999999999998,DECISION_RECORDED
+pay_04967,999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,299.7,DECISION_RECORDED
+pay_04970,9999,timeout,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,6499.35,DECISION_RECORDED
+pay_04972,9999,limit_exceeded,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,2999.7,DECISION_RECORDED
+pay_04974,199,limit_exceeded,2,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,59.699999999999996,DECISION_RECORDED
+pay_04978,9999,authentication_failed,3,ESCALATE,Stopping rule triggered: 3 or more previous attempts,2499.75,DECISION_RECORDED
+pay_04986,9999,authentication_failed,1,AUTHENTICATION,Payment authentication is required,2499.75,DECISION_RECORDED
+pay_04987,1499,authentication_failed,1,AUTHENTICATION,Payment authentication is required,374.75,DECISION_RECORDED
+pay_04989,299,bank_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,164.45000000000002,DECISION_RECORDED
+pay_04994,299,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,179.4,DECISION_RECORDED
+pay_04995,499,timeout,2,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,324.35,DECISION_RECORDED
+pay_04997,299,insufficient_funds,1,CUSTOMER_ACTION,Customer-controlled payment issue; customer intervention required,104.64999999999999,DECISION_RECORDED
+pay_04998,9999,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,5999.4,DECISION_RECORDED
+pay_04999,2499,network_error,1,RETRY_PAYMENT,Temporary technical failure; bounded retry is appropriate,1499.3999999999999,DECISION_RECORDED

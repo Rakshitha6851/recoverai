@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RecoverAI Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 22px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .status {
+            background: #16a34a;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .card-title {
+            color: #64748b;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .card-value {
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .search {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #111827;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #374151;
+        }
+
+        .result {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .decision {
+            background: #f8fafc;
+            border-left: 5px solid #16a34a;
+            padding: 18px;
+            border-radius: 8px;
+        }
+
+        .decision-action {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .info {
+            background: #f8fafc;
+            padding: 14px;
+            border-radius: 8px;
+        }
+
+        .info strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        .audit {
+            background: #ecfdf5;
+            border: 1px solid #bbf7d0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .error {
+            color: #dc2626;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .search {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>RecoverAI</h1>
+        <p>AI Failed Payment Recovery Agent</p>
+    </div>
+
+    <div class="status">
+        ● System Online
+    </div>
+</header>
+
+
+<div class="container">
+
+    <!-- SUMMARY CARDS -->
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-title">
+                Failed Payments
+            </div>
+
+            <div class="card-value" id="failedPayments">
+    -
+</div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-title">
+                Revenue At Risk
+            </div>
+
+            <div class="card-value" id="revenueAtRisk">
+    -
+</div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-title">
+                Revenue Recovered
+            </div>
+
+            <div class="card-value" id="revenueRecovered">
+    -
+</div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-title">
+                Recovery Rate
+            </div>
+
+            <div class="card-value" id="recoveryRate">
+    -
+</div>
+        </div>
+
+    </div>
+
+
+    <!-- PAYMENT LOOKUP -->
+
+    <div class="section">
+
+        <h2>🔎 Recovery Decision</h2>
+
+        <p>
+            Enter a failed payment ID to see what RecoverAI recommends.
+        </p>
+
+        <div class="search">
+
+            <input
+                id="paymentId"
+                type="text"
+                placeholder="Example: pay_00006"
+            >
+
+            <button onclick="lookupPayment()">
+                Analyze Payment
+            </button>
+
+        </div>
+
+        <div id="error" class="error"></div>
+
+        <div id="result" class="result">
+
+            <div class="decision">
+
+                <div class="decision-action" id="action">
+                    -
+                </div>
+
+                <p id="reason">
+                    -
+                </p>
+
+            </div>
+
+
+            <div class="grid">
+
+               <div>
+    <strong>Payment ID</strong>
+    <span id="paymentIdResult">-</span>
+</div>
+
+                <div class="info">
+                    <strong>Amount</strong>
+                    <span id="amount"></span>
+                </div>
+
+                <div class="info">
+                    <strong>Failure Reason</strong>
+                    <span id="failureReason">-</span>
+                </div>
+
+                <div class="info">
+                    <strong>Attempt Number</strong>
+                    <span id="attemptNumber">-</span>
+                </div>
+
+                <div class="info">
+                    <strong>Expected Recovery Value</strong>
+                    <span id="expectedValue">-</span>
+                </div>
+
+                <div class="info">
+                    <strong>Stopping Rule</strong>
+                    <span id="stoppingRule">-</span>
+                </div>
+
+            </div>
+
+
+            <div class="audit">
+
+                <strong>✓ Audit Trail</strong>
+
+                <p id="auditStatus">
+                    Decision recorded.
+                </p>
+
+            </div>
+<button
+    id="recoverButton"
+    onclick="recoverPayment()"
+    style="margin-top: 15px; display: none;"
+>
+    Execute Bounded Recovery
+</button>
+
+<p id="recoveryResult"></p>
+        </div>
+
+    </div>
+<!-- BATCH IMPACT -->
+
+<div class="section">
+
+    <h2>📊 Batch Recovery Impact</h2>
+
+    <p>
+        RecoverAI compared with a naive retry strategy
+        across 1,327 failed payments.
+    </p>
+
+    <div class="grid">
+
+        <div class="info">
+            <strong>NAIVE RETRY — REVENUE RECOVERED</strong>
+            ₹12,65,701
+        </div>
+
+        <div class="info">
+            <strong>RECOVERAI — REVENUE RECOVERED</strong>
+            ₹15,67,429
+        </div>
+
+        <div class="info">
+            <strong>ADDITIONAL REVENUE RECOVERED</strong>
+            ₹3,01,728
+        </div>
+
+        <div class="info">
+            <strong>RETRIES REDUCED</strong>
+            661
+        </div>
+
+    </div>
+
+    <div class="audit">
+
+        <strong>✓ Stopping Rule</strong>
+
+        <p>
+            RecoverAI does not retry payments with
+            3 or more previous attempts.
+        </p>
+
+    </div>
+
+</div>
+
+    <!-- SYSTEM EXPLANATION -->
+<!-- EVALUATION & SAFETY -->
+
+<div class="section">
+
+    <h2>🛡️ Evaluation & Safety</h2>
+
+    <div class="grid">
+
+        <div class="info">
+            <strong>RULE BASELINE ACCURACY</strong>
+            63%
+        </div>
+
+        <div class="info">
+            <strong>ML MODEL ACCURACY</strong>
+            53%
+        </div>
+
+        <div class="info">
+            <strong>MISSED RECOVERABLE REVENUE</strong>
+            ₹5,12,600
+        </div>
+
+        <div class="info">
+            <strong>UNSUCCESSFUL RECOVERY EXPOSURE</strong>
+            ₹7,74,314
+        </div>
+
+    </div>
+
+    <div class="audit">
+
+        <strong>✓ Safety Controls</strong>
+
+        <p>
+            Maximum 3 recovery attempts.
+            Payments at the stopping threshold are escalated.
+            Customer-controlled failures are not automatically retried.
+        </p>
+
+    </div>
+
+</div>
+    <div class="section">
+
+        <h2>How RecoverAI Works</h2>
+
+        <div class="grid">
+
+            <div class="info">
+                <strong>1. DETECT</strong>
+                Identify failed payments and revenue at risk.
+            </div>
+
+            <div class="info">
+                <strong>2. DIAGNOSE</strong>
+                Determine why the payment failed.
+            </div>
+
+            <div class="info">
+                <strong>3. DECIDE</strong>
+                Select the safest recovery intervention.
+            </div>
+
+            <div class="info">
+                <strong>4. RECOVER</strong>
+                Execute bounded recovery with stopping rules.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+    async function loadMetrics() {
+
+    try {
+
+        const response = await fetch(
+            "http://127.0.0.1:8000/metrics"
+        );
+
+        if (!response.ok) {
+            throw new Error("Unable to load metrics");
+        }
+
+        const data = await response.json();
+
+        document.getElementById("failedPayments")
+            .innerText =
+            Number(data.failed_payments).toLocaleString("en-IN");
+
+        document.getElementById("revenueAtRisk")
+            .innerText =
+            "₹" +
+            Number(data.revenue_at_risk).toLocaleString("en-IN");
+
+        document.getElementById("revenueRecovered")
+            .innerText =
+            "₹" +
+            Number(data.revenue_recovered).toLocaleString("en-IN");
+
+        document.getElementById("recoveryRate")
+            .innerText =
+            data.recovery_rate + "%";
+
+    } catch (error) {
+
+        console.error(
+            "Metrics error:",
+            error
+        );
+
+    }
+}
+
+
+loadMetrics();
+async function loadStrategyComparison() {
+
+    try {
+
+        const response = await fetch(
+            "http://127.0.0.1:8000/strategy-comparison"
+        );
+
+        if (!response.ok) {
+            throw new Error(
+                "Unable to load strategy comparison"
+            );
+        }
+
+        const data = await response.json();
+
+        document.getElementById("naiveRevenue")
+            .innerText =
+            "₹" +
+            Number(
+                data.naive.revenue_recovered
+            ).toLocaleString("en-IN");
+
+        document.getElementById("recoveraiRevenue")
+            .innerText =
+            "₹" +
+            Number(
+                data.recoverai.revenue_recovered
+            ).toLocaleString("en-IN");
+
+        document.getElementById("additionalRevenue")
+            .innerText =
+            "₹" +
+            Number(
+                data.impact.additional_revenue_recovered
+            ).toLocaleString("en-IN");
+
+        document.getElementById("retriesReduced")
+            .innerText =
+            Number(
+                data.impact.retries_reduced
+            ).toLocaleString("en-IN");
+
+        document.getElementById("batchStoppingRule")
+            .innerText =
+            data.stopping_rule;
+
+    } catch (error) {
+
+        console.error(
+            "Strategy comparison error:",
+            error
+        );
+
+    }
+}
+
+loadStrategyComparison();
+async function lookupPayment() {
+
+    const paymentId =
+        document.getElementById("paymentId").value.trim();
+
+    if (!paymentId) {
+        alert("Please enter a payment ID");
+        return;
+    }
+
+    try {
+
+        const response = await fetch(
+            `/payments/${paymentId}`
+        );
+
+        if (!response.ok) {
+
+            if (response.status === 404) {
+                alert("Payment not found");
+                return;
+            }
+
+            throw new Error("Unable to analyze payment");
+        }
+
+        const data = await response.json();
+        document.getElementById("result").style.display = "block";
+        document.getElementById("action").innerText =
+            data.recommended_action;
+
+        document.getElementById("reason").innerText =
+            data.decision_reason;
+
+        document.getElementById("paymentIdResult").innerText =
+            data.payment_id;
+
+        document.getElementById("amount").innerText =
+            "₹" +
+            Number(data.amount).toLocaleString("en-IN");
+
+        document.getElementById("failureReason").innerText =
+            data.failure_reason;
+
+        document.getElementById("attemptNumber").innerText =
+            data.attempt_number;
+
+        document.getElementById("expectedValue").innerText =
+            "₹" +
+            Number(
+                data.expected_recovery_value
+            ).toLocaleString("en-IN");
+
+        document.getElementById("stoppingRule").innerText =
+            data.stopping_rule;
+
+        document.getElementById("auditStatus").innerText =
+            data.audit_status;
+const recoverButton =
+    document.getElementById("recoverButton");
+
+if (data.recommended_action === "RETRY_PAYMENT") {
+    recoverButton.style.display = "block";
+} else {
+    recoverButton.style.display = "none";
+}
+    } catch (error) {
+
+        console.error(error);
+
+        alert(
+            "Unable to connect to RecoverAI backend"
+        );
+    }
+}
+
+async function recoverPayment() {
+
+    const paymentId =
+        document.getElementById("paymentId").value.trim();
+
+    if (!paymentId) {
+        alert("Please analyze a payment first.");
+        return;
+    }
+
+    const button =
+        document.getElementById("recoverButton");
+
+    const result =
+        document.getElementById("recoveryResult");
+
+    button.disabled = true;
+    button.innerText = "Recovering...";
+
+    try {
+
+        const response = await fetch(
+            `/payments/${paymentId}/recover`,
+            {
+                method: "POST"
+            }
+        );
+
+        if (!response.ok) {
+            throw new Error("Recovery request failed");
+        }
+
+        const data = await response.json();
+
+        if (data.recovered) {
+
+            result.innerText =
+                "✓ Recovery successful: ₹" +
+                Number(
+                    data.recovered_amount
+                ).toLocaleString("en-IN") +
+                " recovered.";
+
+        } else {
+
+            result.innerText =
+                "Recovery was not successful.";
+
+        }
+
+        document.getElementById("auditStatus")
+            .innerText =
+            data.audit_status;
+
+    } catch (error) {
+
+        console.error(error);
+
+        result.innerText =
+            "Recovery failed. Please try again.";
+
+    } finally {
+
+        button.disabled = false;
+        button.innerText =
+            "Execute Bounded Recovery";
+    }
+}
+</script>
+
+</body>
+</html>
