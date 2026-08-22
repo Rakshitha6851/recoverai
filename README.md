@@ -4,8 +4,6 @@
 
 RecoverAI is an AI-assisted failed-payment recovery system designed to identify failed payments, diagnose failure reasons, choose a safe recovery intervention, execute bounded recovery, and record an auditable outcome.
 
----
-
 ## Problem
 
 Failed payments create direct revenue risk for payment platforms and merchants.
@@ -19,8 +17,6 @@ A naive approach is to retry failed payments broadly. This can cause:
 - retries that should have been stopped
 
 RecoverAI uses failure-aware recovery decisions and explicit stopping rules instead of blindly retrying every failed payment.
-
----
 
 ## Solution
 
@@ -63,8 +59,6 @@ Execute a bounded recovery workflow using:
 - stopping rules
 - audit records
 
----
-
 ## Architecture
 
 ```text
@@ -90,7 +84,6 @@ Historical Outcome
       |
       v
 Audit Trail + Batch Impact
-
 Dataset
 
 The project uses synthetic payment data.
@@ -123,20 +116,18 @@ Maximum retry rule
 
 Payments with 3 or more previous attempts are stopped and escalated.
 
-Example:
-
 Attempt 1 -> Recovery may be attempted
 Attempt 2 -> Recovery may be attempted
 Attempt 3 -> STOP
              |
              v
-         ESCALATE
+          ESCALATE
 
 Customer-controlled failures are not automatically retried.
 
 Recovery Outcomes
 
-The system records different recovery outcomes:
+The system records different recovery outcomes.
 
 Successful
 RECOVERY_RECORDED
@@ -156,6 +147,8 @@ Retries reduced	661
 
 RecoverAI recovered an additional ₹3,01,728 while reducing payment retries by 661 in the simulated batch comparison.
 
+Note: The batch comparison figures above come from the simulated strategy comparison. The dashboard's historical outcome metrics are reported separately.
+
 Evaluation & Safety
 
 The project includes both ML experimentation and a rule-based/cost-aware decision layer.
@@ -170,7 +163,7 @@ The production recovery workflow is constrained by explicit policy and safety ru
 
 Auditability
 
-Every recovery decision can be associated with an audit record containing information such as:
+Every recovery decision can be associated with an audit record containing:
 
 payment ID
 amount
@@ -281,6 +274,11 @@ recoverai/
 │   ├── cost_aware_policy.py
 │   └── generate_audit.py
 |
+├── frontend/
+│   └── index.html
+|
+├── requirements.txt
+├── .gitignore
 └── README.md
 Buildathon Focus
 
@@ -291,16 +289,3 @@ Detect → Diagnose → Decide → Recover → Audit
 The key design principle is:
 
 Recover revenue without blindly retrying payments.
-
-The system combines recovery intelligence with bounded execution, measurable outcomes, and explicit safety controls.
-
-
-### Then save
-
-Press:
-
-**Ctrl + S**
-
-Don't worry about GitHub yet.
-
-After you've saved the README, tell me **done**. Then we'll do the **final cleanup and GitHub commit**, followed by your **5-minute Buildathon presentation script**.
