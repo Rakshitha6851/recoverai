@@ -8,7 +8,7 @@
 
 **NOTE:** The dashboard runs locally after starting the FastAPI server; 127.0.0.1 refers to the machine running the application.
 
-# RecoverAI
+# RecoverAI TEST
 
 ## AI Failed Payment Recovery Agent
 
