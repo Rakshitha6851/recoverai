@@ -1,850 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RecoverAI — Autonomous Revenue Recovery</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
-    <title>RecoverAI Dashboard</title>
+:root{
+  --bg:#060912;
+  --bg2:#0a1020;
+  --panel:rgba(13,20,36,.78);
+  --panel2:rgba(18,27,47,.72);
+  --line:rgba(147,169,205,.15);
+  --line2:rgba(147,169,205,.24);
+  --text:#f4f7ff;
+  --muted:#91a0bb;
+  --cyan:#4de7ff;
+  --violet:#9b7cff;
+  --green:#55e6a5;
+  --amber:#ffc76b;
+  --red:#ff6f91;
+  --shadow:0 24px 70px rgba(0,0,0,.34);
+}
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100vh;
+  color:var(--text);
+  font-family:Inter,system-ui,sans-serif;
+  background:
+    radial-gradient(circle at 15% 8%,rgba(77,231,255,.10),transparent 28rem),
+    radial-gradient(circle at 88% 10%,rgba(155,124,255,.12),transparent 30rem),
+    linear-gradient(145deg,var(--bg),var(--bg2) 55%,#050811);
+}
+button,input{font:inherit}
+button{cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
 
-        :root {
-            --ink: #12243a;
-            --muted: #6d7d91;
-            --line: #dce5ed;
-            --panel: rgba(255, 255, 255, 0.93);
-            --navy: #102a43;
-            --blue: #1769aa;
-            --cyan: #1aa6a6;
-            --lime: #b6d957;
-            --success: #218c70;
-            --shadow: 0 18px 45px rgba(20, 54, 78, 0.09);
-        }
+body::before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;opacity:.28;
+  background-image:
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,black,transparent 85%);
+}
 
-        * {
-            box-sizing: border-box;
-        }
+.shell{max-width:1380px;margin:auto;padding:24px 28px 70px;position:relative;z-index:1}
 
-        body {
-            margin: 0;
-            font-family: 'DM Sans', 'Segoe UI', sans-serif;
-            background: radial-gradient(circle at 5% 0%, rgba(26, 166, 166, 0.16), transparent 27rem), radial-gradient(circle at 95% 12%, rgba(182, 217, 87, 0.14), transparent 24rem), #f3f7f9;
-            color: var(--ink);
-            min-height: 100vh;
-        }
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  padding:10px 0 24px;
+}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-mark{
+  width:44px;height:44px;border-radius:14px;position:relative;
+  background:linear-gradient(135deg,#1b315d,#0d1629);
+  border:1px solid var(--line2);
+  box-shadow:0 0 35px rgba(77,231,255,.12);
+}
+.brand-mark::before,.brand-mark::after{
+  content:"";position:absolute;border:2px solid var(--cyan);border-radius:50%;
+}
+.brand-mark::before{width:16px;height:16px;left:12px;top:12px;opacity:.9}
+.brand-mark::after{width:28px;height:28px;left:6px;top:6px;opacity:.18}
+.brand h1{margin:0;font:700 22px "Space Grotesk",sans-serif;letter-spacing:-.5px}
+.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}
+.online{
+  display:flex;align-items:center;gap:9px;padding:9px 13px;border-radius:999px;
+  background:rgba(85,230,165,.07);border:1px solid rgba(85,230,165,.22);
+  color:#bfffe1;font-size:12px;font-weight:700;letter-spacing:.2px
+}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.45;transform:scale(.7)}}
 
-        header {
-            background: linear-gradient(115deg, #102a43 0%, #143e5d 58%, #166b71 100%);
-            color: white;
-            padding: 28px max(24px, calc((100% - 1160px) / 2));
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 8px 28px rgba(16, 42, 67, 0.2);
-        }
+.hero{
+  display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:stretch;margin-bottom:18px
+}
+.hero-main,.hero-core,.panel{
+  background:linear-gradient(145deg,rgba(15,24,43,.9),rgba(8,14,27,.76));
+  border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(18px);
+}
+.hero-main{border-radius:28px;padding:34px;position:relative;overflow:hidden;min-height:330px}
+.hero-main::after{
+  content:"";position:absolute;width:460px;height:460px;right:-190px;top:-230px;
+  border:1px solid rgba(77,231,255,.12);border-radius:50%;
+  box-shadow:0 0 0 45px rgba(77,231,255,.025),0 0 0 90px rgba(155,124,255,.018);
+}
+.eyebrow{display:flex;align-items:center;gap:9px;color:var(--cyan);font-size:11px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase}
+.eyebrow span{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+.hero h2{font:700 clamp(36px,5vw,66px)/.98 "Space Grotesk",sans-serif;letter-spacing:-2.8px;margin:20px 0 15px;max-width:760px}
+.hero h2 em{font-style:normal;background:linear-gradient(90deg,var(--cyan),#a58aff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-copy{color:var(--muted);max-width:670px;line-height:1.65;font-size:14px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.tag{padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.035);border:1px solid var(--line);font-size:11px;color:#bdc9dc}
+.hero-core{border-radius:28px;min-height:330px;display:grid;place-items:center;position:relative;overflow:hidden}
+.core-scene{width:260px;height:260px;position:relative;display:grid;place-items:center}
+.core-glow{position:absolute;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(77,231,255,.22),transparent 68%);filter:blur(6px)}
+.core{
+  width:106px;height:106px;border-radius:50%;position:relative;z-index:3;
+  background:radial-gradient(circle at 32% 28%,#d9fbff 0 3%,#4de7ff 5%,#315aa0 31%,#121a39 66%,#090d1c 100%);
+  box-shadow:0 0 30px rgba(77,231,255,.35),inset -14px -12px 30px rgba(0,0,0,.55);
+  animation:float 4s ease-in-out infinite;
+}
+.core::after{content:"AI";position:absolute;inset:0;display:grid;place-items:center;font:700 22px "Space Grotesk";color:#fff;text-shadow:0 0 16px var(--cyan)}
+.orbit{position:absolute;border:1px solid rgba(77,231,255,.26);border-radius:50%;transform:rotate(-18deg)}
+.o1{width:185px;height:82px;animation:spin 7s linear infinite}
+.o2{width:225px;height:112px;transform:rotate(52deg);border-color:rgba(155,124,255,.28);animation:spin2 9s linear infinite}
+.o3{width:250px;height:150px;transform:rotate(118deg);border-color:rgba(85,230,165,.18);animation:spin 12s linear infinite}
+.node{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+.n1{top:35px;right:24px}.n2{bottom:34px;left:20px;background:var(--violet);box-shadow:0 0 14px var(--violet)}.n3{right:0;bottom:100px;background:var(--green);box-shadow:0 0 14px var(--green)}
+.core-label{position:absolute;bottom:20px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:1.4px;text-transform:uppercase}
+@keyframes spin{to{transform:rotate(342deg)}}
+@keyframes spin2{to{transform:rotate(-308deg)}}
+@keyframes float{50%{transform:translateY(-7px)}}
 
-        header::after {
-            content: '';
-            position: absolute;
-            width: 260px;
-            height: 260px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 50%;
-            right: 8%;
-            top: -185px;
-            box-shadow: 0 0 0 24px rgba(255, 255, 255, 0.035), 0 0 0 48px rgba(255, 255, 255, 0.025);
-        }
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.metric{padding:20px;border-radius:18px;background:var(--panel);border:1px solid var(--line);box-shadow:0 14px 40px rgba(0,0,0,.18)}
+.metric-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:700}
+.metric-icon{width:25px;height:25px;border-radius:8px;display:grid;place-items:center;background:rgba(77,231,255,.08);color:var(--cyan);font-size:12px}
+.metric-value{font:700 27px "Space Grotesk";margin-top:12px;letter-spacing:-1px}
+.metric-sub{color:#6f7e98;font-size:10px;margin-top:7px}
 
-        header > div { position: relative; z-index: 1; }
+.panel{border-radius:22px;padding:24px;margin-bottom:18px}
+.panel-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:18px}
+.panel-title{margin:0;font:600 18px "Space Grotesk";letter-spacing:-.3px}
+.panel-desc{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
+.badge{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:7px 10px;border-radius:999px;border:1px solid var(--line);color:#b8c4d8;background:rgba(255,255,255,.03)}
 
-        header h1 {
-            margin: 0;
-            font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
-            font-size: 28px;
-            letter-spacing: -0.5px;
-        }
+.lookup{
+  display:grid;grid-template-columns:1fr auto;gap:10px;padding:7px;border:1px solid var(--line2);
+  background:rgba(4,8,16,.55);border-radius:15px
+}
+.lookup input{
+  min-width:0;border:0;background:transparent;color:#fff;padding:12px 13px;font-size:14px;outline:none
+}
+.lookup input::placeholder{color:#5d6a81}
+.primary{
+  border:0;border-radius:11px;padding:12px 18px;color:#041018;font-weight:800;
+  background:linear-gradient(135deg,#63efff,#8fbdff);box-shadow:0 8px 28px rgba(77,231,255,.18);
+  transition:.2s
+}
+.primary:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.primary:disabled{opacity:.55;cursor:wait;transform:none}
+.error{color:#ff8da6;font-size:12px;margin-top:10px;min-height:18px}
 
-        header p {
-            margin: 7px 0 0;
-            color: #c9dce5;
-            font-size: 13px;
-        }
+.result{display:none;margin-top:18px}
+.decision-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:14px}
+.decision-card{
+  border-radius:18px;padding:22px;border:1px solid rgba(77,231,255,.18);
+  background:radial-gradient(circle at 95% 0,rgba(77,231,255,.08),transparent 35%),rgba(8,16,29,.75)
+}
+.decision-kicker{color:var(--cyan);font-size:10px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}
+.decision-action{font:700 28px "Space Grotesk";margin:8px 0 8px}
+.decision-reason{color:var(--muted);font-size:13px;line-height:1.6}
+.decision-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:18px}
+.data-chip{padding:12px;border-radius:12px;background:rgba(255,255,255,.028);border:1px solid var(--line)}
+.data-chip strong{display:block;color:#6f7d94;font-size:9px;letter-spacing:.9px;text-transform:uppercase;margin-bottom:5px}
+.data-chip span{font-size:12px;font-weight:600}
+.trace{
+  border-radius:18px;padding:19px;border:1px solid var(--line);background:rgba(7,13,24,.7)
+}
+.trace h3{font:600 14px "Space Grotesk";margin:0 0 15px}
+.trace-step{display:grid;grid-template-columns:22px 1fr;gap:10px;position:relative;padding-bottom:15px}
+.trace-step:not(:last-child)::after{content:"";position:absolute;left:8px;top:19px;width:1px;height:calc(100% - 8px);background:linear-gradient(var(--cyan),transparent)}
+.trace-dot{width:17px;height:17px;border-radius:50%;border:1px solid rgba(77,231,255,.4);background:#0c1c2a;box-shadow:0 0 10px rgba(77,231,255,.1)}
+.trace-step b{font-size:11px}.trace-step p{margin:3px 0 0;color:#738199;font-size:10px;line-height:1.45}
+.recovery-button{margin-top:16px;border:1px solid rgba(85,230,165,.25);background:rgba(85,230,165,.08);color:#a8ffd5;border-radius:11px;padding:12px 15px;font-weight:800}
+.recovery-button:hover{background:rgba(85,230,165,.13)}
+.recovery-button:disabled{opacity:.55;cursor:wait}
+#recoveryResult{font-size:12px;color:var(--green);margin:12px 0 0;line-height:1.5}
 
-        .status {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.22);
-            padding: 9px 13px;
-            border-radius: 6px;
-            font-size: 13px;
-            font-weight: 600;
-            backdrop-filter: blur(8px);
-        }
+.gate{
+  margin-top:14px;border-radius:14px;padding:14px;border:1px solid rgba(85,230,165,.16);
+  background:linear-gradient(90deg,rgba(85,230,165,.055),rgba(77,231,255,.025))
+}
+.gate-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.gate-title{font-size:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:800;color:#9dffc9}
+.gate-rule{font-size:10px;color:#718097}
+.progress{height:6px;border-radius:99px;background:#172136;overflow:hidden}
+.progress > span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--green),var(--cyan));width:33%;transition:width .4s}
+.gate-copy{display:flex;justify-content:space-between;color:#75839b;font-size:10px;margin-top:7px}
 
-        .status::first-letter {
-            color: var(--lime);
-        }
+.batch-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}
+.compare{padding:18px;border-radius:18px;border:1px solid var(--line);background:rgba(7,13,24,.64)}
+.compare-row{margin-bottom:18px}
+.compare-head{display:flex;justify-content:space-between;gap:12px;font-size:11px;color:#a9b5c9;margin-bottom:8px}
+.compare-head strong{font:600 13px "Space Grotesk";color:#eef3fb}
+.bar{height:12px;border-radius:99px;background:#111a2b;overflow:hidden}
+.bar span{display:block;height:100%;border-radius:inherit}
+.bar.naive span{width:67%;background:linear-gradient(90deg,#65728c,#8795ae)}
+.bar.ai span{width:88%;background:linear-gradient(90deg,#4de7ff,#9b7cff)}
+.impact{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px
+}
+.impact-box{padding:14px;border-radius:14px;background:rgba(255,255,255,.028);border:1px solid var(--line)}
+.impact-box small{color:#718097;font-size:9px;letter-spacing:.8px;text-transform:uppercase}
+.impact-box strong{display:block;font:700 22px "Space Grotesk";margin-top:6px}
+.impact-box.highlight{border-color:rgba(85,230,165,.2);background:rgba(85,230,165,.045)}
+.impact-box.highlight strong{color:#8ff7c1}
 
-        .container {
-            max-width: 1160px;
-            margin: 38px auto 64px;
-            padding: 0 24px;
-        }
+.safety-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.safety-card{padding:16px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.022)}
+.safety-card small{display:block;color:#6f7d94;font-size:9px;letter-spacing:.8px;text-transform:uppercase}
+.safety-card strong{display:block;font:700 22px "Space Grotesk";margin-top:7px}
+.safety-card span{display:block;color:#77849a;font-size:10px;margin-top:5px}
+.safety-note{margin-top:12px;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,199,107,.18);background:rgba(255,199,107,.045);color:#b9a77f;font-size:11px;line-height:1.55}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 14px;
-            margin-bottom: 26px;
-        }
+.pipeline{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.stage{position:relative;padding:18px;border-radius:16px;background:rgba(255,255,255,.025);border:1px solid var(--line)}
+.stage:not(:last-child)::after{content:"→";position:absolute;right:-10px;top:50%;transform:translateY(-50%);color:#53627c;background:#080e1b;border-radius:50%;width:20px;height:20px;text-align:center;line-height:19px;border:1px solid var(--line);z-index:2}
+.stage-num{font:700 10px "Space Grotesk";color:var(--cyan);letter-spacing:1px}
+.stage h3{font:600 14px "Space Grotesk";margin:8px 0 5px}
+.stage p{margin:0;color:#738199;font-size:10px;line-height:1.5}
 
-        .card {
-            background: var(--panel);
-            padding: 21px 20px;
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            position: relative;
-            overflow: hidden;
-        }
+.footer{padding:18px 0 0;color:#59677e;text-align:center;font-size:10px;letter-spacing:.5px}
 
-        .card::before {
-            content: '';
-            display: block;
-            width: 34px;
-            height: 4px;
-            background: var(--cyan);
-            margin-bottom: 18px;
-            border-radius: 4px;
-        }
-
-        .card-title {
-            color: var(--muted);
-            font-size: 13px;
-            margin-bottom: 8px;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-        }
-
-        .card-value {
-            color: var(--ink);
-            font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
-            font-size: 29px;
-            font-weight: 700;
-        }
-
-        .section {
-            background: var(--panel);
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 28px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
-        }
-
-        .section h2 {
-            margin-top: 0;
-            margin-bottom: 8px;
-            font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
-            color: var(--navy);
-            font-size: 21px;
-            letter-spacing: -0.2px;
-        }
-
-        .section > p {
-            color: var(--muted);
-            line-height: 1.6;
-        }
-
-        .search {
-            display: flex;
-            gap: 9px;
-            margin-top: 19px;
-        }
-
-        input {
-            flex: 1;
-            padding: 13px 15px;
-            border: 1px solid #c5d2dc;
-            border-radius: 6px;
-            font-size: 15px;
-            font-family: inherit;
-            color: var(--ink);
-            background: #fbfdfe;
-            outline: none;
-            transition: border-color 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        input:focus {
-            border-color: var(--cyan);
-            box-shadow: 0 0 0 3px rgba(26, 166, 166, 0.13);
-        }
-
-        button {
-            padding: 12px 19px;
-            border: none;
-            border-radius: 6px;
-            background: var(--blue);
-            color: white;
-            cursor: pointer;
-            font-size: 15px;
-            font-family: inherit;
-            font-weight: 700;
-            transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        button:hover {
-            background: #12568e;
-            box-shadow: 0 7px 16px rgba(23, 105, 170, 0.22);
-            transform: translateY(-1px);
-        }
-
-        button:disabled {
-            cursor: wait;
-            opacity: 0.7;
-            transform: none;
-        }
-
-        .result {
-            margin-top: 20px;
-            display: none;
-        }
-
-        .decision {
-            background: linear-gradient(115deg, #edf8f5, #f7fbf8);
-            border: 1px solid #cce8df;
-            border-left: 5px solid var(--success);
-            padding: 19px 20px;
-            border-radius: 6px;
-            margin-bottom: 16px;
-        }
-
-        .decision-action {
-            color: var(--success);
-            font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .decision p { margin-bottom: 0; color: #496657; line-height: 1.5; }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-
-        .info {
-            background: #f8fafc;
-            border: 1px solid #e2eaf0;
-            padding: 15px;
-            border-radius: 6px;
-            color: var(--ink);
-            line-height: 1.5;
-        }
-
-        .info strong {
-            display: block;
-            margin-bottom: 5px;
-            color: var(--muted);
-            font-size: 12px;
-            letter-spacing: 0.4px;
-            line-height: 1.3;
-        }
-
-        .audit {
-            background: #f2f8e9;
-            border: 1px solid #d5e5b8;
-            padding: 15px 17px;
-            border-radius: 6px;
-            margin-top: 16px;
-            color: #405b38;
-        }
-
-        .audit strong { color: #537b31; }
-        .audit p { margin-bottom: 0; line-height: 1.55; }
-
-        #recoveryResult {
-            color: var(--success);
-            font-weight: 700;
-            line-height: 1.5;
-        }
-
-        .error {
-            color: #dc2626;
-            margin-top: 15px;
-        }
-
-        @media (max-width: 800px) {
-            .cards {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            header { padding: 24px; }
-            .container { margin-top: 24px; }
-
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 500px) {
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .section { padding: 21px 17px; }
-
-            .search {
-                flex-direction: column;
-            }
-
-            .search button { width: 100%; }
-            header h1 { font-size: 24px; }
-            .status { font-size: 11px; padding: 8px 9px; }
-        }
-    </style>
+@media(max-width:1000px){
+  .hero,.decision-layout,.batch-layout{grid-template-columns:1fr}
+  .hero-core{min-height:280px}
+  .metrics,.safety-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:680px){
+  .shell{padding:16px 14px 50px}
+  .topbar{align-items:flex-start}
+  .hero-main{padding:24px;min-height:auto}.hero h2{font-size:42px;letter-spacing:-2px}
+  .hero-core{min-height:250px}
+  .metrics{grid-template-columns:1fr 1fr}
+  .decision-grid{grid-template-columns:1fr 1fr}
+  .pipeline{grid-template-columns:1fr}
+  .stage:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-12px;transform:translateX(-50%)}
+  .lookup{grid-template-columns:1fr}.lookup .primary{width:100%}
+  .safety-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:430px){
+  .metrics,.safety-grid,.impact,.decision-grid{grid-template-columns:1fr}
+  .hero h2{font-size:35px}
+  .brand p{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
 </head>
 
 <body>
-
-<header>
-    <div>
+<div class="shell">
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div>
         <h1>RecoverAI</h1>
-        <p>AI Failed Payment Recovery Agent</p>
+        <p>Autonomous revenue recovery intelligence</p>
+      </div>
+    </div>
+    <div class="online"><span class="dot"></span>RECOVERY ENGINE ONLINE</div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-main">
+      <div class="eyebrow"><span></span> AI FAILED PAYMENT RECOVERY AGENT</div>
+      <h2>Recover revenue.<br><em>Not retries.</em></h2>
+      <p class="hero-copy">
+        RecoverAI detects failed payments, diagnoses the failure, selects a bounded recovery intervention,
+        executes it safely, and records the outcome for audit.
+      </p>
+      <div class="hero-tags">
+        <span class="tag">Bounded recovery</span>
+        <span class="tag">Stopping rules</span>
+        <span class="tag">Expected recovery value</span>
+        <span class="tag">Auditable decisions</span>
+      </div>
+    </div>
+    <div class="hero-core" aria-label="RecoverAI decision engine visualization">
+      <div class="core-scene">
+        <div class="core-glow"></div>
+        <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+        <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div>
+        <div class="core"></div>
+        <div class="core-label">Recovery decision core</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="metrics" aria-label="Recovery metrics">
+    <div class="metric"><div class="metric-top"><span>Failed payments</span><span class="metric-icon">↘</span></div><div class="metric-value" id="failedPayments">—</div><div class="metric-sub">Detected in current dataset</div></div>
+    <div class="metric"><div class="metric-top"><span>Revenue at risk</span><span class="metric-icon">₹</span></div><div class="metric-value" id="revenueAtRisk">—</div><div class="metric-sub">Capital exposed to failed payments</div></div>
+    <div class="metric"><div class="metric-top"><span>Revenue recovered</span><span class="metric-icon">↗</span></div><div class="metric-value" id="revenueRecovered">—</div><div class="metric-sub">Recovered by current policy</div></div>
+    <div class="metric"><div class="metric-top"><span>Recovery rate</span><span class="metric-icon">%</span></div><div class="metric-value" id="recoveryRate">—</div><div class="metric-sub">Observed recovery performance</div></div>
+  </section>
+
+  <section class="panel" id="decision-panel">
+    <div class="panel-head">
+      <div>
+        <h2 class="panel-title">AI Recovery Decision</h2>
+        <p class="panel-desc">Inspect one failed payment and watch the recovery policy turn evidence into a bounded action.</p>
+      </div>
+      <span class="badge">Decision trace</span>
     </div>
 
-    <div class="status">
-        ● System Online
+    <div class="lookup">
+      <input id="paymentId" type="text" placeholder="Enter payment ID · e.g. pay_00037" aria-label="Payment ID">
+      <button class="primary" id="analyzeButton" type="button" onclick="lookupPayment()">Analyze payment</button>
     </div>
-</header>
+    <div id="error" class="error" role="alert"></div>
 
-
-<div class="container">
-
-    <!-- SUMMARY CARDS -->
-
-    <div class="cards">
-
-        <div class="card">
-            <div class="card-title">
-                Failed Payments
+    <div id="result" class="result" aria-live="polite">
+      <div class="decision-layout">
+        <div>
+          <div class="decision-card">
+            <div class="decision-kicker">Recommended intervention</div>
+            <div class="decision-action" id="action">—</div>
+            <div class="decision-reason" id="reason">—</div>
+            <div class="decision-grid">
+              <div class="data-chip"><strong>Payment</strong><span id="paymentIdResult">—</span></div>
+              <div class="data-chip"><strong>Amount</strong><span id="amount">—</span></div>
+              <div class="data-chip"><strong>Failure</strong><span id="failureReason">—</span></div>
+              <div class="data-chip"><strong>Attempt</strong><span id="attemptNumber">—</span></div>
+              <div class="data-chip"><strong>Expected value</strong><span id="expectedValue">—</span></div>
+              <div class="data-chip"><strong>Stopping rule</strong><span id="stoppingRule">—</span></div>
             </div>
 
-            <div class="card-value" id="failedPayments">
-    -
-</div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-title">
-                Revenue At Risk
+            <div class="gate">
+              <div class="gate-head"><span class="gate-title">Safety gate</span><span class="gate-rule" id="gateStatus">Policy check</span></div>
+              <div class="progress"><span id="attemptProgress"></span></div>
+              <div class="gate-copy"><span id="attemptCopy">Attempt — / 3</span><span>Maximum 3 attempts</span></div>
             </div>
 
-            <div class="card-value" id="revenueAtRisk">
-    -
-</div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-title">
-                Revenue Recovered
-            </div>
-
-            <div class="card-value" id="revenueRecovered">
-    -
-</div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-title">
-                Recovery Rate
-            </div>
-
-            <div class="card-value" id="recoveryRate">
-    -
-</div>
-        </div>
-
-    </div>
-
-
-    <!-- PAYMENT LOOKUP -->
-
-    <div class="section">
-
-        <h2>🔎 Recovery Decision</h2>
-
-        <p>
-            Enter a failed payment ID to see what RecoverAI recommends.
-        </p>
-
-        <div class="search">
-
-            <input
-                id="paymentId"
-                type="text"
-                placeholder="Example: pay_00006"
-            >
-
-            <button onclick="lookupPayment()">
-                Analyze Payment
+            <button id="recoverButton" class="recovery-button" type="button" onclick="recoverPayment()" style="display:none">
+              Execute bounded recovery
             </button>
-
+            <p id="recoveryResult"></p>
+          </div>
         </div>
 
-        <div id="error" class="error"></div>
-
-        <div id="result" class="result">
-
-            <div class="decision">
-
-                <div class="decision-action" id="action">
-                    -
-                </div>
-
-                <p id="reason">
-                    -
-                </p>
-
-            </div>
-
-
-            <div class="grid">
-
-               <div>
-    <strong>Payment ID</strong>
-    <span id="paymentIdResult">-</span>
-</div>
-
-                <div class="info">
-                    <strong>Amount</strong>
-                    <span id="amount"></span>
-                </div>
-
-                <div class="info">
-                    <strong>Failure Reason</strong>
-                    <span id="failureReason">-</span>
-                </div>
-
-                <div class="info">
-                    <strong>Attempt Number</strong>
-                    <span id="attemptNumber">-</span>
-                </div>
-
-                <div class="info">
-                    <strong>Expected Recovery Value</strong>
-                    <span id="expectedValue">-</span>
-                </div>
-
-                <div class="info">
-                    <strong>Stopping Rule</strong>
-                    <span id="stoppingRule">-</span>
-                </div>
-
-            </div>
-
-
-            <div class="audit">
-
-                <strong>✓ Audit Trail</strong>
-
-                <p id="auditStatus">
-                    Decision recorded.
-                </p>
-
-            </div>
-<button
-    id="recoverButton"
-    onclick="recoverPayment()"
-    style="margin-top: 15px; display: none;"
->
-    Execute Bounded Recovery
-</button>
-
-<p id="recoveryResult"></p>
+        <div class="trace">
+          <h3>Recovery reasoning trace</h3>
+          <div class="trace-step"><div class="trace-dot"></div><div><b>DETECT</b><p>Payment identified as failed and revenue exposure isolated.</p></div></div>
+          <div class="trace-step"><div class="trace-dot"></div><div><b>DIAGNOSE</b><p id="traceDiagnosis">Failure evidence is evaluated.</p></div></div>
+          <div class="trace-step"><div class="trace-dot"></div><div><b>DECIDE</b><p id="traceDecision">Recovery intervention selected from policy.</p></div></div>
+          <div class="trace-step"><div class="trace-dot"></div><div><b>RECOVER</b><p id="traceRecover">Execution remains bounded by the stopping rule.</p></div></div>
+          <div class="trace-step"><div class="trace-dot"></div><div><b>AUDIT</b><p id="auditStatus">Decision recorded.</p></div></div>
         </div>
-
+      </div>
     </div>
-<!-- BATCH IMPACT -->
+  </section>
 
-<div class="section">
-
-    <h2>📊 Batch Recovery Impact</h2>
-
-    <p>
-        RecoverAI compared with a naive retry strategy
-        across 1,327 failed payments.
-    </p>
-
-    <div class="grid">
-
-        <div class="info">
-            <strong>NAIVE RETRY — REVENUE RECOVERED</strong>
-            <span id="naiveRevenue">₹12,65,701</span>
-        </div>
-
-        <div class="info">
-            <strong>RECOVERAI — REVENUE RECOVERED</strong>
-            <span id="recoveraiRevenue">₹15,67,429</span>
-        </div>
-
-        <div class="info">
-            <strong>ADDITIONAL REVENUE RECOVERED</strong>
-            <span id="additionalRevenue">₹3,01,728</span>
-        </div>
-
-        <div class="info">
-            <strong>RETRIES REDUCED</strong>
-            <span id="retriesReduced">661</span>
-        </div>
-
+  <section class="panel">
+    <div class="panel-head">
+      <div>
+        <h2 class="panel-title">Batch Recovery Impact</h2>
+        <p class="panel-desc">RecoverAI compared with a naive retry strategy across the failed-payment batch.</p>
+      </div>
+      <span class="badge">Economic impact</span>
     </div>
 
-    <div class="audit">
-
-        <strong>✓ Stopping Rule</strong>
-
-        <p>
-            RecoverAI does not retry payments with
-            3 or more previous attempts.
+    <div class="batch-layout">
+      <div class="compare">
+        <div class="compare-row">
+          <div class="compare-head"><span>Naive retry</span><strong id="naiveRevenue">—</strong></div>
+          <div class="bar naive"><span></span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-head"><span>RecoverAI</span><strong id="recoveraiRevenue">—</strong></div>
+          <div class="bar ai"><span></span></div>
+        </div>
+        <div class="impact">
+          <div class="impact-box highlight"><small>Additional recovered</small><strong id="additionalRevenue">—</strong></div>
+          <div class="impact-box"><small>Retries reduced</small><strong id="retriesReduced">—</strong></div>
+        </div>
+      </div>
+      <div class="compare">
+        <div class="eyebrow"><span></span> BOUNDED RECOVERY POLICY</div>
+        <h3 style="font:600 20px 'Space Grotesk';margin:12px 0 7px">Stop when recovery becomes unsafe.</h3>
+        <p style="color:var(--muted);font-size:12px;line-height:1.65;margin:0">
+          RecoverAI does not retry payments at or beyond the configured stopping threshold.
+          Customer-controlled failures are not automatically retried.
         </p>
-
+        <div class="gate" style="margin-top:18px">
+          <div class="gate-head"><span class="gate-title">Policy boundary</span><span class="gate-rule">3 attempts maximum</span></div>
+          <div class="progress"><span style="width:100%"></span></div>
+          <div class="gate-copy"><span>1 → retry eligible</span><span>3 → escalate</span></div>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <section class="panel">
+    <div class="panel-head">
+      <div>
+        <h2 class="panel-title">Evaluation & Safety</h2>
+        <p class="panel-desc">Measured model performance and the controls that constrain recovery behavior.</p>
+      </div>
+      <span class="badge">Evaluation</span>
+    </div>
+    <div class="safety-grid">
+      <div class="safety-card"><small>Rule baseline accuracy</small><strong>63%</strong><span>Current stronger baseline</span></div>
+      <div class="safety-card"><small>ML model accuracy</small><strong>53%</strong><span>Experimental model result</span></div>
+      <div class="safety-card"><small>Missed recoverable revenue</small><strong>₹5,12,600</strong><span>Evaluation exposure</span></div>
+      <div class="safety-card"><small>Unsuccessful exposure</small><strong>₹7,74,314</strong><span>Recovery risk surface</span></div>
+    </div>
+    <div class="safety-note">
+      <strong>Safety controls:</strong> maximum 3 recovery attempts; payments at the stopping threshold are escalated;
+      customer-controlled failures are not automatically retried.
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <div>
+        <h2 class="panel-title">Recovery Intelligence Pipeline</h2>
+        <p class="panel-desc">The product is simple to operate because the decision complexity is contained inside the engine.</p>
+      </div>
+      <span class="badge">End-to-end flow</span>
+    </div>
+    <div class="pipeline">
+      <div class="stage"><div class="stage-num">01</div><h3>Detect</h3><p>Identify failed payments and quantify revenue at risk.</p></div>
+      <div class="stage"><div class="stage-num">02</div><h3>Diagnose</h3><p>Determine why the payment failed.</p></div>
+      <div class="stage"><div class="stage-num">03</div><h3>Decide</h3><p>Select the safest recovery intervention.</p></div>
+      <div class="stage"><div class="stage-num">04</div><h3>Recover + Audit</h3><p>Execute bounded recovery and record the outcome.</p></div>
+    </div>
+  </section>
+
+  <div class="footer">RECOVERAI · AUTONOMOUS REVENUE RECOVERY INTELLIGENCE · SAFETY FIRST</div>
 </div>
-
-    <!-- SYSTEM EXPLANATION -->
-<!-- EVALUATION & SAFETY -->
-
-<div class="section">
-
-    <h2>🛡️ Evaluation & Safety</h2>
-
-    <div class="grid">
-
-        <div class="info">
-            <strong>RULE BASELINE ACCURACY</strong>
-            63%
-        </div>
-
-        <div class="info">
-            <strong>ML MODEL ACCURACY</strong>
-            53%
-        </div>
-
-        <div class="info">
-            <strong>MISSED RECOVERABLE REVENUE</strong>
-            ₹5,12,600
-        </div>
-
-        <div class="info">
-            <strong>UNSUCCESSFUL RECOVERY EXPOSURE</strong>
-            ₹7,74,314
-        </div>
-
-    </div>
-
-    <div class="audit">
-
-        <strong>✓ Safety Controls</strong>
-
-        <p>
-            Maximum 3 recovery attempts.
-            Payments at the stopping threshold are escalated.
-            Customer-controlled failures are not automatically retried.
-        </p>
-
-    </div>
-
-</div>
-    <div class="section">
-
-        <h2>How RecoverAI Works</h2>
-
-        <div class="grid">
-
-            <div class="info">
-                <strong>1. DETECT</strong>
-                Identify failed payments and revenue at risk.
-            </div>
-
-            <div class="info">
-                <strong>2. DIAGNOSE</strong>
-                Determine why the payment failed.
-            </div>
-
-            <div class="info">
-                <strong>3. DECIDE</strong>
-                Select the safest recovery intervention.
-            </div>
-
-            <div class="info">
-                <strong>4. RECOVER</strong>
-                Execute bounded recovery with stopping rules.
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
 
 <script>
-    async function loadMetrics() {
-
-    try {
-
-        const response = await fetch(
-            "/metrics"
-        );
-
-        if (!response.ok) {
-            throw new Error("Unable to load metrics");
-        }
-
-        const data = await response.json();
-
-        document.getElementById("failedPayments")
-            .innerText =
-            Number(data.failed_payments).toLocaleString("en-IN");
-
-        document.getElementById("revenueAtRisk")
-            .innerText =
-            "₹" +
-            Number(data.revenue_at_risk).toLocaleString("en-IN");
-
-        document.getElementById("revenueRecovered")
-            .innerText =
-            "₹" +
-            Number(data.revenue_recovered).toLocaleString("en-IN");
-
-        document.getElementById("recoveryRate")
-            .innerText =
-            data.recovery_rate + "%";
-
-    } catch (error) {
-
-        console.error(
-            "Metrics error:",
-            error
-        );
-
-    }
+async function loadMetrics(){
+  try{
+    const response=await fetch("/metrics");
+    if(!response.ok) throw new Error("Unable to load metrics");
+    const data=await response.json();
+    document.getElementById("failedPayments").innerText=Number(data.failed_payments).toLocaleString("en-IN");
+    document.getElementById("revenueAtRisk").innerText="₹"+Number(data.revenue_at_risk).toLocaleString("en-IN");
+    document.getElementById("revenueRecovered").innerText="₹"+Number(data.revenue_recovered).toLocaleString("en-IN");
+    document.getElementById("recoveryRate").innerText=data.recovery_rate+"%";
+  }catch(error){ console.error("Metrics error:",error); }
 }
 
+async function loadStrategyComparison(){
+  try{
+    const response=await fetch("/strategy-comparison");
+    if(!response.ok) throw new Error("Unable to load strategy comparison");
+    const data=await response.json();
+    const naive=Number(data.naive.revenue_recovered);
+    const ai=Number(data.recoverai.revenue_recovered);
+    const max=Math.max(naive,ai,1);
+    document.getElementById("naiveRevenue").innerText="₹"+naive.toLocaleString("en-IN");
+    document.getElementById("recoveraiRevenue").innerText="₹"+ai.toLocaleString("en-IN");
+    document.getElementById("additionalRevenue").innerText="₹"+Number(data.impact.additional_revenue_recovered).toLocaleString("en-IN");
+    document.getElementById("retriesReduced").innerText=Number(data.impact.retries_reduced).toLocaleString("en-IN");
+    document.querySelector(".bar.naive span").style.width=(naive/max*100)+"%";
+    document.querySelector(".bar.ai span").style.width=(ai/max*100)+"%";
+  }catch(error){ console.error("Strategy comparison error:",error); }
+}
+
+function setText(id,value){document.getElementById(id).innerText=value ?? "—"}
+
+async function lookupPayment(){
+  const paymentId=document.getElementById("paymentId").value.trim();
+  const error=document.getElementById("error");
+  const button=document.getElementById("analyzeButton");
+  error.innerText="";
+  if(!paymentId){error.innerText="Enter a payment ID to analyze.";return}
+
+  button.disabled=true;
+  button.innerText="Analyzing…";
+  try{
+    const response=await fetch(`/payments/${encodeURIComponent(paymentId)}`);
+    if(!response.ok){
+      if(response.status===404){error.innerText="Payment not found. Try a valid failed payment ID.";return}
+      throw new Error("Unable to analyze payment");
+    }
+    const data=await response.json();
+    document.getElementById("result").style.display="block";
+    setText("action",data.recommended_action);
+    setText("reason",data.decision_reason);
+    setText("paymentIdResult",data.payment_id);
+    setText("amount","₹"+Number(data.amount).toLocaleString("en-IN"));
+    setText("failureReason",data.failure_reason);
+    setText("attemptNumber",data.attempt_number);
+    setText("expectedValue","₹"+Number(data.expected_recovery_value).toLocaleString("en-IN"));
+    setText("stoppingRule",data.stopping_rule);
+    setText("auditStatus",data.audit_status);
+
+    const attempt=Math.max(0,Number(data.attempt_number)||0);
+    const percent=Math.min(100,Math.max(0,(attempt/3)*100));
+    document.getElementById("attemptProgress").style.width=Math.max(8,percent)+"%";
+    document.getElementById("attemptCopy").innerText=`Attempt ${attempt} / 3`;
+    document.getElementById("gateStatus").innerText=attempt>=3 ? "ESCALATE" : "WITHIN LIMIT";
+
+    setText("traceDiagnosis",`Detected ${data.failure_reason || "payment failure"}; the engine evaluated the supplied payment evidence.`);
+    setText("traceDecision",`${data.recommended_action || "Recovery action"} selected. Expected value: ₹${Number(data.expected_recovery_value||0).toLocaleString("en-IN")}.`);
+    setText("traceRecover",attempt>=3 ? "Stopping threshold reached; recovery should escalate." : "Execution is permitted only inside the bounded recovery policy.");
+
+    const recoverButton=document.getElementById("recoverButton");
+    recoverButton.style.display=data.recommended_action==="RETRY_PAYMENT" ? "inline-block" : "none";
+    document.getElementById("recoveryResult").innerText="";
+    document.getElementById("decision-panel").scrollIntoView({behavior:"smooth",block:"start"});
+  }catch(error){
+    console.error(error);
+    document.getElementById("error").innerText="Unable to connect to the RecoverAI backend.";
+  }finally{
+    button.disabled=false;
+    button.innerText="Analyze payment";
+  }
+}
+
+async function recoverPayment(){
+  const paymentId=document.getElementById("paymentId").value.trim();
+  if(!paymentId)return;
+  const button=document.getElementById("recoverButton");
+  const result=document.getElementById("recoveryResult");
+  button.disabled=true;
+  button.innerText="Executing bounded recovery…";
+  result.innerText="";
+  try{
+    const response=await fetch(`/payments/${encodeURIComponent(paymentId)}/recover`,{method:"POST"});
+    if(!response.ok) throw new Error("Recovery request failed");
+    const data=await response.json();
+    if(data.recovered){
+      result.innerText="✓ Recovery successful: ₹"+Number(data.recovered_amount).toLocaleString("en-IN")+" recovered.";
+    }else{
+      result.innerText="Recovery was not successful. The outcome has been recorded.";
+    }
+    setText("auditStatus",data.audit_status);
+    setText("traceRecover",data.recovered ? "Recovery executed and returned a successful outcome." : "Recovery executed but returned an unsuccessful outcome; audit trail updated.");
+  }catch(error){
+    console.error(error);
+    result.innerText="Recovery failed. Please try again.";
+  }finally{
+    button.disabled=false;
+    button.innerText="Execute bounded recovery";
+  }
+}
+
+document.getElementById("paymentId").addEventListener("keydown",e=>{
+  if(e.key==="Enter") lookupPayment();
+});
 
 loadMetrics();
-async function loadStrategyComparison() {
-
-    try {
-
-        const response = await fetch(
-            "/strategy-comparison"
-        );
-
-        if (!response.ok) {
-            throw new Error(
-                "Unable to load strategy comparison"
-            );
-        }
-
-        const data = await response.json();
-
-        document.getElementById("naiveRevenue")
-            .innerText =
-            "₹" +
-            Number(
-                data.naive.revenue_recovered
-            ).toLocaleString("en-IN");
-
-        document.getElementById("recoveraiRevenue")
-            .innerText =
-            "₹" +
-            Number(
-                data.recoverai.revenue_recovered
-            ).toLocaleString("en-IN");
-
-        document.getElementById("additionalRevenue")
-            .innerText =
-            "₹" +
-            Number(
-                data.impact.additional_revenue_recovered
-            ).toLocaleString("en-IN");
-
-        document.getElementById("retriesReduced")
-            .innerText =
-            Number(
-                data.impact.retries_reduced
-            ).toLocaleString("en-IN");
-
-        document.getElementById("batchStoppingRule")
-            .innerText =
-            data.stopping_rule;
-
-    } catch (error) {
-
-        console.error(
-            "Strategy comparison error:",
-            error
-        );
-
-    }
-}
-
 loadStrategyComparison();
-async function lookupPayment() {
-
-    const paymentId =
-        document.getElementById("paymentId").value.trim();
-
-    if (!paymentId) {
-        alert("Please enter a payment ID");
-        return;
-    }
-
-    try {
-
-        const response = await fetch(
-            `/payments/${paymentId}`
-        );
-
-        if (!response.ok) {
-
-            if (response.status === 404) {
-                alert("Payment not found");
-                return;
-            }
-
-            throw new Error("Unable to analyze payment");
-        }
-
-        const data = await response.json();
-        document.getElementById("result").style.display = "block";
-        document.getElementById("action").innerText =
-            data.recommended_action;
-
-        document.getElementById("reason").innerText =
-            data.decision_reason;
-
-        document.getElementById("paymentIdResult").innerText =
-            data.payment_id;
-
-        document.getElementById("amount").innerText =
-            "₹" +
-            Number(data.amount).toLocaleString("en-IN");
-
-        document.getElementById("failureReason").innerText =
-            data.failure_reason;
-
-        document.getElementById("attemptNumber").innerText =
-            data.attempt_number;
-
-        document.getElementById("expectedValue").innerText =
-            "₹" +
-            Number(
-                data.expected_recovery_value
-            ).toLocaleString("en-IN");
-
-        document.getElementById("stoppingRule").innerText =
-            data.stopping_rule;
-
-        document.getElementById("auditStatus").innerText =
-            data.audit_status;
-const recoverButton =
-    document.getElementById("recoverButton");
-
-if (data.recommended_action === "RETRY_PAYMENT") {
-    recoverButton.style.display = "block";
-} else {
-    recoverButton.style.display = "none";
-}
-    } catch (error) {
-
-        console.error(error);
-
-        alert(
-            "Unable to connect to RecoverAI backend"
-        );
-    }
-}
-
-async function recoverPayment() {
-
-    const paymentId =
-        document.getElementById("paymentId").value.trim();
-
-    if (!paymentId) {
-        alert("Please analyze a payment first.");
-        return;
-    }
-
-    const button =
-        document.getElementById("recoverButton");
-
-    const result =
-        document.getElementById("recoveryResult");
-
-    button.disabled = true;
-    button.innerText = "Recovering...";
-
-    try {
-
-        const response = await fetch(
-            `/payments/${paymentId}/recover`,
-            {
-                method: "POST"
-            }
-        );
-
-        if (!response.ok) {
-            throw new Error("Recovery request failed");
-        }
-
-        const data = await response.json();
-
-        if (data.recovered) {
-
-            result.innerText =
-                "✓ Recovery successful: ₹" +
-                Number(
-                    data.recovered_amount
-                ).toLocaleString("en-IN") +
-                " recovered.";
-
-        } else {
-
-            result.innerText =
-                "Recovery was not successful.";
-
-        }
-
-        document.getElementById("auditStatus")
-            .innerText =
-            data.audit_status;
-
-    } catch (error) {
-
-        console.error(error);
-
-        result.innerText =
-            "Recovery failed. Please try again.";
-
-    } finally {
-
-        button.disabled = false;
-        button.innerText =
-            "Execute Bounded Recovery";
-    }
-}
 </script>
-
 </body>
 </html>
