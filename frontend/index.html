@@ -7,113 +7,204 @@
     <title>RecoverAI Dashboard</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+        :root {
+            --ink: #12243a;
+            --muted: #6d7d91;
+            --line: #dce5ed;
+            --panel: rgba(255, 255, 255, 0.93);
+            --navy: #102a43;
+            --blue: #1769aa;
+            --cyan: #1aa6a6;
+            --lime: #b6d957;
+            --success: #218c70;
+            --shadow: 0 18px 45px rgba(20, 54, 78, 0.09);
+        }
+
         * {
             box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f7fb;
-            color: #1f2937;
+            font-family: 'DM Sans', 'Segoe UI', sans-serif;
+            background: radial-gradient(circle at 5% 0%, rgba(26, 166, 166, 0.16), transparent 27rem), radial-gradient(circle at 95% 12%, rgba(182, 217, 87, 0.14), transparent 24rem), #f3f7f9;
+            color: var(--ink);
+            min-height: 100vh;
         }
 
         header {
-            background: #111827;
+            background: linear-gradient(115deg, #102a43 0%, #143e5d 58%, #166b71 100%);
             color: white;
-            padding: 22px 40px;
+            padding: 28px max(24px, calc((100% - 1160px) / 2));
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 28px rgba(16, 42, 67, 0.2);
         }
+
+        header::after {
+            content: '';
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            right: 8%;
+            top: -185px;
+            box-shadow: 0 0 0 24px rgba(255, 255, 255, 0.035), 0 0 0 48px rgba(255, 255, 255, 0.025);
+        }
+
+        header > div { position: relative; z-index: 1; }
 
         header h1 {
             margin: 0;
-            font-size: 24px;
+            font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+            font-size: 28px;
+            letter-spacing: -0.5px;
         }
 
         header p {
-            margin: 5px 0 0;
-            color: #cbd5e1;
-            font-size: 14px;
-        }
-
-        .status {
-            background: #16a34a;
-            padding: 7px 12px;
-            border-radius: 20px;
+            margin: 7px 0 0;
+            color: #c9dce5;
             font-size: 13px;
         }
 
+        .status {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            padding: 9px 13px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            backdrop-filter: blur(8px);
+        }
+
+        .status::first-letter {
+            color: var(--lime);
+        }
+
         .container {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 0 20px;
+            max-width: 1160px;
+            margin: 38px auto 64px;
+            padding: 0 24px;
         }
 
         .cards {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-            margin-bottom: 25px;
+            gap: 14px;
+            margin-bottom: 26px;
         }
 
         .card {
-            background: white;
-            padding: 22px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            background: var(--panel);
+            padding: 21px 20px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            display: block;
+            width: 34px;
+            height: 4px;
+            background: var(--cyan);
+            margin-bottom: 18px;
+            border-radius: 4px;
         }
 
         .card-title {
-            color: #64748b;
+            color: var(--muted);
             font-size: 13px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
         }
 
         .card-value {
-            font-size: 27px;
-            font-weight: bold;
+            color: var(--ink);
+            font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+            font-size: 29px;
+            font-weight: 700;
         }
 
         .section {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 28px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
         }
 
         .section h2 {
             margin-top: 0;
+            margin-bottom: 8px;
+            font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+            color: var(--navy);
+            font-size: 21px;
+            letter-spacing: -0.2px;
+        }
+
+        .section > p {
+            color: var(--muted);
+            line-height: 1.6;
         }
 
         .search {
             display: flex;
-            gap: 10px;
-            margin-top: 15px;
+            gap: 9px;
+            margin-top: 19px;
         }
 
         input {
             flex: 1;
-            padding: 12px;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
+            padding: 13px 15px;
+            border: 1px solid #c5d2dc;
+            border-radius: 6px;
             font-size: 15px;
+            font-family: inherit;
+            color: var(--ink);
+            background: #fbfdfe;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        input:focus {
+            border-color: var(--cyan);
+            box-shadow: 0 0 0 3px rgba(26, 166, 166, 0.13);
         }
 
         button {
-            padding: 12px 20px;
+            padding: 12px 19px;
             border: none;
-            border-radius: 8px;
-            background: #111827;
+            border-radius: 6px;
+            background: var(--blue);
             color: white;
             cursor: pointer;
             font-size: 15px;
+            font-family: inherit;
+            font-weight: 700;
+            transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
         }
 
         button:hover {
-            background: #374151;
+            background: #12568e;
+            box-shadow: 0 7px 16px rgba(23, 105, 170, 0.22);
+            transform: translateY(-1px);
+        }
+
+        button:disabled {
+            cursor: wait;
+            opacity: 0.7;
+            transform: none;
         }
 
         .result {
@@ -122,43 +213,64 @@
         }
 
         .decision {
-            background: #f8fafc;
-            border-left: 5px solid #16a34a;
-            padding: 18px;
-            border-radius: 8px;
+            background: linear-gradient(115deg, #edf8f5, #f7fbf8);
+            border: 1px solid #cce8df;
+            border-left: 5px solid var(--success);
+            padding: 19px 20px;
+            border-radius: 6px;
+            margin-bottom: 16px;
         }
 
         .decision-action {
+            color: var(--success);
+            font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
             font-size: 22px;
-            font-weight: bold;
+            font-weight: 700;
             margin-bottom: 10px;
         }
+
+        .decision p { margin-bottom: 0; color: #496657; line-height: 1.5; }
 
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            gap: 12px;
         }
 
         .info {
             background: #f8fafc;
-            padding: 14px;
-            border-radius: 8px;
+            border: 1px solid #e2eaf0;
+            padding: 15px;
+            border-radius: 6px;
+            color: var(--ink);
+            line-height: 1.5;
         }
 
         .info strong {
             display: block;
             margin-bottom: 5px;
-            color: #64748b;
+            color: var(--muted);
             font-size: 12px;
+            letter-spacing: 0.4px;
+            line-height: 1.3;
         }
 
         .audit {
-            background: #ecfdf5;
-            border: 1px solid #bbf7d0;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 15px;
+            background: #f2f8e9;
+            border: 1px solid #d5e5b8;
+            padding: 15px 17px;
+            border-radius: 6px;
+            margin-top: 16px;
+            color: #405b38;
+        }
+
+        .audit strong { color: #537b31; }
+        .audit p { margin-bottom: 0; line-height: 1.55; }
+
+        #recoveryResult {
+            color: var(--success);
+            font-weight: 700;
+            line-height: 1.5;
         }
 
         .error {
@@ -171,6 +283,9 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            header { padding: 24px; }
+            .container { margin-top: 24px; }
+
             .grid {
                 grid-template-columns: 1fr;
             }
@@ -181,9 +296,15 @@
                 grid-template-columns: 1fr;
             }
 
+            .section { padding: 21px 17px; }
+
             .search {
                 flex-direction: column;
             }
+
+            .search button { width: 100%; }
+            header h1 { font-size: 24px; }
+            .status { font-size: 11px; padding: 8px 9px; }
         }
     </style>
 </head>
@@ -366,22 +487,22 @@
 
         <div class="info">
             <strong>NAIVE RETRY — REVENUE RECOVERED</strong>
-            ₹12,65,701
+            <span id="naiveRevenue">₹12,65,701</span>
         </div>
 
         <div class="info">
             <strong>RECOVERAI — REVENUE RECOVERED</strong>
-            ₹15,67,429
+            <span id="recoveraiRevenue">₹15,67,429</span>
         </div>
 
         <div class="info">
             <strong>ADDITIONAL REVENUE RECOVERED</strong>
-            ₹3,01,728
+            <span id="additionalRevenue">₹3,01,728</span>
         </div>
 
         <div class="info">
             <strong>RETRIES REDUCED</strong>
-            661
+            <span id="retriesReduced">661</span>
         </div>
 
     </div>
@@ -482,7 +603,7 @@
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/metrics"
+            "/metrics"
         );
 
         if (!response.ok) {
@@ -526,7 +647,7 @@ async function loadStrategyComparison() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/strategy-comparison"
+            "/strategy-comparison"
         );
 
         if (!response.ok) {
