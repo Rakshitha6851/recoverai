@@ -390,6 +390,69 @@ body::before{
     </div>
   </section>
 
+
+  <section class="panel" id="decision-explain">
+    <div class="panel-head">
+      <div>
+        <h2 class="panel-title">Why did RecoverAI decide this?</h2>
+        <p class="panel-desc">Concise, user-facing decision factors from the existing recovery engine — not hidden chain-of-thought.</p>
+      </div>
+      <span class="badge">Explainable decision</span>
+    </div>
+    <div class="safety-grid">
+      <div class="safety-card"><small>Failure evidence</small><strong id="whyFailure">—</strong><span>Returned failure reason</span></div>
+      <div class="safety-card"><small>Attempt context</small><strong id="whyAttempt">—</strong><span>Current recovery attempt</span></div>
+      <div class="safety-card"><small>Selected action</small><strong id="whyAction">—</strong><span>Existing recommendation</span></div>
+      <div class="safety-card"><small>Expected value</small><strong id="whyValue">—</strong><span>Existing expected recovery</span></div>
+    </div>
+    <div class="safety-note" id="whyPolicy">Analyze a payment above to populate the evidence used by the decision.</div>
+  </section>
+
+  <section class="panel" id="strategy-simulator">
+    <div class="panel-head">
+      <div>
+        <h2 class="panel-title">Recovery Strategy Simulator</h2>
+        <p class="panel-desc">A batch-level evaluation surface using the existing strategy-comparison API. This is simulation/evaluation, not live payment processing.</p>
+      </div>
+      <span class="badge">Batch experiment</span>
+    </div>
+    <div class="batch-layout">
+      <div class="compare">
+        <div class="compare-row">
+          <div class="compare-head"><span>Naive retry</span><strong id="simNaive">—</strong></div>
+          <div class="bar naive"><span></span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-head"><span>RecoverAI</span><strong id="simAI">—</strong></div>
+          <div class="bar ai"><span></span></div>
+        </div>
+        <div class="impact">
+          <div class="impact-box highlight"><small>Additional recovered</small><strong id="simAdditional">—</strong></div>
+          <div class="impact-box"><small>Retries reduced</small><strong id="simRetries">—</strong></div>
+        </div>
+      </div>
+      <div class="compare">
+        <div class="eyebrow"><span></span> WHAT THE EXPERIMENT SHOWS</div>
+        <h3 style="font:600 20px 'Space Grotesk';margin:12px 0 7px">Optimize recovered value, not retry volume.</h3>
+        <p style="color:var(--muted);font-size:12px;line-height:1.65;margin:0">The comparison is strongest when viewed across the full failed-payment batch. It gives the reviewer measurable money recovered and a concrete behavioral trade-off.</p>
+        <div class="safety-note" style="margin-top:14px">The numbers are sourced from the existing backend response; no new synthetic outcome is introduced by this UI.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="audit-stream">
+    <div class="panel-head">
+      <div>
+        <h2 class="panel-title">Audit Event Stream</h2>
+        <p class="panel-desc">The UI surfaces audit status returned by the application. It does not fabricate a historical event stream.</p>
+      </div>
+      <span class="badge">Auditability</span>
+    </div>
+    <div id="auditEvent" class="impact-box">
+      <small>STATUS</small><strong>Waiting for analysis</strong><div style="color:var(--muted);font-size:11px;margin-top:6px">Run a payment investigation to populate the available audit status.</div>
+    </div>
+  </section>
+
   <section class="panel">
     <div class="panel-head">
       <div>
@@ -454,6 +517,10 @@ async function loadStrategyComparison(){
     document.getElementById("recoveraiRevenue").innerText="₹"+ai.toLocaleString("en-IN");
     document.getElementById("additionalRevenue").innerText="₹"+Number(data.impact.additional_revenue_recovered).toLocaleString("en-IN");
     document.getElementById("retriesReduced").innerText=Number(data.impact.retries_reduced).toLocaleString("en-IN");
+    setText("simNaive","₹"+naive.toLocaleString("en-IN"));
+    setText("simAI","₹"+ai.toLocaleString("en-IN"));
+    setText("simAdditional","₹"+Number(data.impact.additional_revenue_recovered).toLocaleString("en-IN"));
+    setText("simRetries",Number(data.impact.retries_reduced).toLocaleString("en-IN"));
     document.querySelector(".bar.naive span").style.width=(naive/max*100)+"%";
     document.querySelector(".bar.ai span").style.width=(ai/max*100)+"%";
   }catch(error){ console.error("Strategy comparison error:",error); }
@@ -487,6 +554,12 @@ async function lookupPayment(){
     setText("expectedValue","₹"+Number(data.expected_recovery_value).toLocaleString("en-IN"));
     setText("stoppingRule",data.stopping_rule);
     setText("auditStatus",data.audit_status);
+    setText("whyFailure",data.failure_reason);
+    setText("whyAttempt",String(data.attempt_number));
+    setText("whyAction",data.recommended_action);
+    setText("whyValue","₹"+Number(data.expected_recovery_value||0).toLocaleString("en-IN"));
+    setText("whyPolicy",data.stopping_rule || "Stopping rule returned by the recovery engine.");
+    document.getElementById("auditEvent").innerHTML="<small>DECISION AUDIT</small><strong>"+(data.payment_id||paymentId)+"</strong><div style='color:var(--muted);font-size:11px;margin-top:6px'>"+(data.audit_status||"Audit status returned by application.")+"</div>";
 
     const attempt=Math.max(0,Number(data.attempt_number)||0);
     const percent=Math.min(100,Math.max(0,(attempt/3)*100));
@@ -529,6 +602,8 @@ async function recoverPayment(){
       result.innerText="Recovery was not successful. The outcome has been recorded.";
     }
     setText("auditStatus",data.audit_status);
+    document.getElementById("auditEvent").innerHTML="<small>"+(data.recovered ? "RECOVERY_SUCCESS" : "RECOVERY_FAILED")+"</small><strong>"+paymentId+"</strong><div style='color:var(--muted);font-size:11px;margin-top:6px'>"+(data.audit_status||"Audit status returned by application.")+"</div>";
+    setText("whyPolicy",data.audit_status || "Recovery outcome recorded by application.");
     setText("traceRecover",data.recovered ? "Recovery executed and returned a successful outcome." : "Recovery executed but returned an unsuccessful outcome; audit trail updated.");
   }catch(error){
     console.error(error);
