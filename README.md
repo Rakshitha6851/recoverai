@@ -14,7 +14,7 @@
 
 RecoverAI is an AI-assisted failed-payment recovery system designed to identify failed payments, diagnose failure reasons, choose a safe recovery intervention, execute bounded recovery, and record an auditable outcome.
 
-# Note: The dashboard runs locally after starting the FastAPI server. 127.0.0.1 refers to the machine running the application.
+**Note:** The dashboard runs locally after starting the FastAPI server. 127.0.0.1 refers to the machine running the application.
 
 ## Problem
 
